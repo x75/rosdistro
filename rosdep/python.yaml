@@ -155,6 +155,7 @@ python-paramiko:
   arch: python-paramiko
 python-pydot:
   ubuntu: python-pydot
+  debian: python-pydot
   osx:
     pip:
       packages: [ pydot ]
