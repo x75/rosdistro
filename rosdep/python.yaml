@@ -249,6 +249,7 @@ python-sphinx:
   ubuntu: python-sphinx
 python-support:
   ubuntu: python-support
+  debian: python-support
   fedora: notneeded
 python-svn: 
   ubuntu: python-svn
