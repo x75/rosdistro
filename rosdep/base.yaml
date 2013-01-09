@@ -219,10 +219,7 @@ coinor-libipopt-dev:
   fedora: cmake
 collada-dom:
   ubuntu: collada-dom-dev
-  debian:
-     sid:
-     apt:
-       packages: [ collada-dom-dev ]
+  debian: collada-dom-dev
 coreutils:
   arch: coreutils
   debian: coreutils
