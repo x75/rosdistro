@@ -219,9 +219,7 @@ coinor-libipopt-dev:
   fedora: cmake
 collada-dom:
   ubuntu: collada-dom-dev
-  debian: |
-    #!/bin/sh
-    echo "please install from source"
+  debian: collada-dom-dev
 coreutils:
   arch: coreutils
   debian: coreutils
