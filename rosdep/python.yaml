@@ -300,8 +300,9 @@ python-redis:
   debian: [python-redis]
   ubuntu: [python-redis]
 python-rosdep:
-  debian: |
-		sudo pip install rosdep
+  debian:
+    pip:
+      packages: [rosdep]
   fedora:
     pip:
       packages: [rosdep]
