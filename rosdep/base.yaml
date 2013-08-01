@@ -1451,6 +1451,7 @@ log4cxx:
     sid: [liblog4cxx10-dev]
     squeeze: [liblog4cxx10-dev]
     wheezy: [liblog4cxx10-dev]
+    jessie: [liblog4cxx10-dev]
   fedora: [log4cxx-devel]
   freebsd: [log4cxx]
   gentoo: [dev-libs/log4cxx]
