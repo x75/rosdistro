@@ -315,7 +315,9 @@ python-rosinstall:
     pip:
       packages: [rosinstall]
 python-rospkg:
-  debian: [python-rospkg]
+  debian:
+    pip:
+      packages: [rospkg]
   fedora:
     pip:
       packages: [rospkg]
