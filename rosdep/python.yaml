@@ -54,7 +54,9 @@ python-bluez:
   rhel: [python-bluez]
   ubuntu: [python-bluez]
 python-catkin-pkg:
-  debian: [python-catkin-pkg]
+  debian:
+    pip:
+      packages: [catkin-pkg]
   fedora:
     pip:
       packages: [catkin-pkg]
