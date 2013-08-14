@@ -1507,7 +1507,7 @@ libtheora:
 libtiff-dev:
   arch: [libtiff]
   debian:
-    sid: [libtiff5-dev]
+    sid: [libtiff4-dev]
     wheezy: [libtiff5-dev]
   fedora: [libtiff]
   gentoo:
