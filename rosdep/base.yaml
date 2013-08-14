@@ -265,6 +265,7 @@ bullet:
   gentoo:
   portage:
     packages: [sci-physics/bullet]
+  debian: [libbullet-dev]
   ubuntu:
     precise:
       apt:
