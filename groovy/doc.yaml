@@ -150,7 +150,7 @@ repositories:
     version: HEAD
   camera_info_manager_py:
     type: git
-    url: https://github.com/jack-oquin/camera_info_manager_py.git
+    url: https://github.com/ros-perception/camera_info_manager_py.git
     version: master
   camera_pose:
     type: hg
@@ -989,7 +989,7 @@ repositories:
   optris_drivers:
     type: git
     url: https://github.com/ohm-ros-pkg/optris_drivers.git
-    version: master
+    version: groovy-devel
   orocos_controllers:
     type: git
     url: https://github.com/RCPRG-ros-pkg/orocos_controllers.git
@@ -1312,7 +1312,7 @@ repositories:
   rosdoc_lite:
     type: git
     url: https://github.com/ros-infrastructure/rosdoc_lite.git
-    version: groovy-devel
+    version: master
   rosh_core:
     type: hg
     url: http://kforge.ros.org/rosh/rosh_core
@@ -1400,6 +1400,10 @@ repositories:
     type: git
     url: https://github.com/ipa320/schunk_robots.git
     version: release_fuerte
+  scitos_metralabs:
+    type: git
+    url: https://github.com/felix-kolbe/scitos_metralabs.git
+    version: master
   segbot:
     type: git
     url: https://github.com/utexas-bwi/segbot.git

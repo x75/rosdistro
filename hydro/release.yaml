@@ -71,13 +71,22 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-drivers-gbp/camera1394-release.git
-    version: 1.9.3-0
+    version: 1.9.4-0
   camera_info_manager_py:
     status: developed
     tags:
       release: release/hydro/{package}/{version}
-    url: https://github.com/jack-oquin/camera_info_manager_py-release.git
+    url: https://github.com/ros-gbp/camera_info_manager_py-release.git
     version: 0.2.2-0
+  camera_umd:
+    packages:
+      camera_umd:
+      jpeg_streamer:
+      uvc_camera:
+    tags:
+      release: release/hydro/{package}/{version}
+    url: https://github.com/ktossell/camera_umd-release.git
+    version: 0.2.0-0
   catkin:
     status: maintained
     tags:
@@ -161,7 +170,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/control_toolbox-release.git
-    version: 1.10.2-0
+    version: 1.10.3-0
   convex_decomposition:
     tags:
       release: release/hydro/{package}/{version}
@@ -219,7 +228,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/utexas-bwi-gbp/eband_local_planner-release.git
-    version: 0.1.1-0
+    version: 0.1.2-0
   ecl_core:
     packages:
       ecl_command_line:
@@ -321,7 +330,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/ecto_pcl-release.git
-    version: 0.3.11-0
+    version: 0.3.13-0
   ecto_ros:
     status: maintained
     tags:
@@ -392,7 +401,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/gazebo_ros_pkgs-release.git
-    version: 2.2.1-0
+    version: 2.3.0-0
   gencpp:
     status: maintained
     tags:
@@ -416,6 +425,16 @@ repositories:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/genpy-release.git
     version: 0.4.13-0
+  geographic_info:
+    packages:
+      geodesy:
+      geographic_info:
+      geographic_msgs:
+    status: developed
+    tags:
+      release: release/hydro/{package}/{version}
+    url: https://github.com/ros-geographic-info/geographic_info-release.git
+    version: 0.3.0-0
   geometric_shapes:
     status: maintained
     tags:
@@ -465,18 +484,50 @@ repositories:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/geometry_tutorials-release.git
     version: 0.2.0-0
+  gps_umd:
+    packages:
+      gps_common:
+      gps_umd:
+      gpsd_client:
+    tags:
+      release: release/hydro/{package}/{version}
+    url: https://github.com/ktossell/gps_umd-release.git
+    version: 0.1.6-0
   gscam:
     status: maintained
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-drivers-gbp/gscam-release.git
     version: 0.1.1-0
+  hector_slam:
+    packages:
+      hector_compressed_map_transport:
+      hector_geotiff:
+      hector_geotiff_plugins:
+      hector_imu_attitude_to_tf:
+      hector_map_server:
+      hector_map_tools:
+      hector_mapping:
+      hector_marker_drawing:
+      hector_nav_msgs:
+      hector_slam:
+      hector_slam_launch:
+      hector_trajectory_server:
+    tags:
+      release: release/hydro/{package}/{version}
+    url: https://github.com/tu-darmstadt-ros-pkg-gbp/hector_slam-release.git
+    version: 0.3.0-1
   hokuyo_node:
     status: maintained
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/hokuyo_node-release.git
     version: 1.7.7-0
+  household_objects_database:
+    tags:
+      release: release/hydro/{package}/{version}
+    url: https://github.com/ros-gbp/household_objects_database-release.git
+    version: 0.1.3-0
   household_objects_database_msgs:
     tags:
       release: release/hydro/{package}/{version}
@@ -507,7 +558,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/image_pipeline-release.git
-    version: 1.11.0-0
+    version: 1.11.1-0
   image_transport_plugins:
     packages:
       compressed_depth_image_transport:
@@ -568,7 +619,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/yujinrobot-release/kobuki-release.git
-    version: 0.4.0-0
+    version: 0.4.0-2
   kobuki_desktop:
     packages:
       kobuki_dashboard:
@@ -580,7 +631,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/yujinrobot-release/kobuki_desktop-release.git
-    version: 0.2.0-1
+    version: 0.2.0-3
   kobuki_msgs:
     status: developed
     tags:
@@ -660,7 +711,15 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ktossell/libuvc-release.git
-    version: 0.0.1-4
+    version: 0.0.1-6
+  libuvc_ros:
+    packages:
+      libuvc_camera:
+      libuvc_ros:
+    tags:
+      release: release/hydro/{package}/{version}
+    url: https://github.com/ktossell/libuvc_ros-release.git
+    version: 0.0.2-2
   manipulation_msgs:
     tags:
       release: release/hydro/{package}/{version}
@@ -699,13 +758,13 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/moveit_commander-release.git
-    version: 0.5.0-0
+    version: 0.5.1-0
   moveit_core:
     status: maintained
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/moveit_core-release.git
-    version: 0.5.0-0
+    version: 0.5.1-0
   moveit_ikfast:
     status: developed
     tags:
@@ -726,7 +785,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/moveit_msgs-release.git
-    version: 0.5.0-0
+    version: 0.5.1-0
   moveit_planners:
     packages:
       moveit_planners:
@@ -736,7 +795,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/moveit_planners-release.git
-    version: 0.5.0-0
+    version: 0.5.1-0
   moveit_plugins:
     packages:
       moveit_plugins:
@@ -744,7 +803,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/moveit_plugins-release.git
-    version: 0.5.1-0
+    version: 0.5.2-0
   moveit_pr2:
     packages:
       moveit_pr2:
@@ -755,7 +814,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/moveit_pr2-release.git
-    version: 0.5.1-0
+    version: 0.5.2-0
   moveit_resources:
     status: maintained
     tags:
@@ -789,13 +848,13 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/moveit_ros-release.git
-    version: 0.5.2-0
+    version: 0.5.4-0
   moveit_setup_assistant:
     status: maintained
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/moveit_setup_assistant-release.git
-    version: 0.5.0-0
+    version: 0.5.1-0
   navigation:
     packages:
       amcl:
@@ -821,11 +880,25 @@ repositories:
     url: https://github.com/ros-gbp/navigation-release.git
     version: 1.11.3-0
   nmea_gps_driver:
-    status: maintained
+    status: end-of-life
+    status_description: Replaced by the nmea_navsat_driver package. Scheduled to be
+      removed in Indigo.
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-drivers-gbp/nmea_gps_driver-release.git
-    version: 0.3.1-0
+    version: 0.3.2-0
+  nmea_msgs:
+    status: maintained
+    tags:
+      release: release/hydro/{package}/{version}
+    url: https://github.com/ros-drivers-gbp/nmea_msgs-release.git
+    version: 0.1.0-0
+  nmea_navsat_driver:
+    status: maintained
+    tags:
+      release: release/hydro/{package}/{version}
+    url: https://github.com/ros-drivers-gbp/nmea_navsat_driver-release.git
+    version: 0.3.2-0
   nodelet_core:
     packages:
       nodelet:
@@ -892,7 +965,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/object_recognition_transparent_objects-release.git
-    version: 0.3.15-1
+    version: 0.3.17-0
   octomap:
     packages:
       octomap:
@@ -914,12 +987,27 @@ repositories:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/octomap_ros-release.git
     version: 0.3.0-0
+  octomap_rviz_plugins:
+    tags:
+      release: release/hydro/{package}/{version}
+    url: https://github.com/ros-gbp/octomap_rviz_plugins-release
+    version: 0.0.4-0
+  oculus_rviz_plugins:
+    tags:
+      release: release/hydro/{package}/{version}
+    url: https://github.com/ros-gbp/oculus_rviz_plugins-release.git
+    version: 0.0.6-0
+  oculus_sdk:
+    tags:
+      release: release/hydro/{package}/{version}
+    url: https://github.com/ros-gbp/OculusSDK-release.git
+    version: 0.2.3-4
   ompl:
     status: maintained
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/ompl-release.git
-    version: 0.12.2002388-0
+    version: 0.13.0002516-0
   open_karto:
     tags:
       release: release/hydro/{package}/{version}
@@ -950,13 +1038,27 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/openni_launch-release.git
-    version: 1.9.1-0
+    version: 1.9.2-0
   openni_tracker:
     status: maintained
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/openni_tracker-release.git
     version: 0.2.0-1
+  openrtm_common:
+    packages:
+      hrpsys:
+      openhrp3:
+      openrtm_aist:
+      openrtm_aist_python:
+      openrtm_common:
+      rtctree:
+      rtshell:
+      rtsprofile:
+    tags:
+      release: release/hydro/{package}/{version}
+    url: https://github.com/start-jsk/openrtm_common-release.git
+    version: 3.1.5-0
   openslam_gmapping:
     tags:
       release: release/hydro/{package}/{version}
@@ -1128,6 +1230,11 @@ repositories:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/random_numbers-release.git
     version: 0.2.0-0
+  razer_hydra:
+    tags:
+      release: release/hydro/{package}/{version}
+    url: https://github.com/dgossow/razer_hydra-release.git
+    version: 0.0.6-0
   realtime_tools:
     status: maintained
     tags:
@@ -1181,7 +1288,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/yujinrobot-release/rocon_app_platform-release.git
-    version: 0.5.3-0
+    version: 0.5.4-0
   rocon_concert:
     packages:
       concert_conductor:
@@ -1203,7 +1310,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/yujinrobot-release/rocon_msgs-release.git
-    version: 0.5.2-0
+    version: 0.6.0-0
   rocon_multimaster:
     packages:
       redis:
@@ -1219,7 +1326,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/yujinrobot-release/rocon_multimaster-release.git
-    version: 0.5.4-0
+    version: 0.5.5-0
   rocon_rqt_plugins:
     packages:
       rocon_gateway_graph:
@@ -1241,7 +1348,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/yujinrobot-release/rocon_tutorials-release.git
-    version: 0.5.4-0
+    version: 0.5.5-0
   ros:
     packages:
       mk:
@@ -1347,7 +1454,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/ros_controllers-release.git
-    version: 0.5.1-1
+    version: 0.5.2-1
   ros_http_video_streamer:
     url: https://github.com/ros-gbp/ros_http_video_streamer-release.git
   ros_tutorials:
@@ -1396,16 +1503,17 @@ repositories:
     url: https://github.com/ros-gbp/roscpp_core-release.git
     version: 0.3.16-0
   rosdoc_lite:
+    status: maintained
     tags:
-      release: release/{package}/{upstream_version}
+      release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/rosdoc_lite-release.git
-    version: 0.2.2-0
+    version: 0.2.3-0
   rosjava_tools:
     status: developed
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/yujinrobot-release/rosjava_tools-release.git
-    version: 0.1.8-0
+    version: 0.1.10-0
   roslisp:
     tags:
       release: release/hydro/{package}/{version}
@@ -1520,7 +1628,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/utexas-bwi-gbp/segbot-release.git
-    version: 0.1.5-0
+    version: 0.1.6-0
   segbot_apps:
     packages:
       segbot_apps:
@@ -1529,17 +1637,16 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/utexas-bwi-gbp/segbot_apps-release.git
-    version: 0.1.3-0
+    version: 0.1.4-0
   segbot_simulator:
     packages:
       segbot_gazebo:
-      segbot_gazebo_plugins:
       segbot_simulator:
     status: developed
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/utexas-bwi-gbp/segbot_simulator-release.git
-    version: 0.1.2-0
+    version: 0.1.4-0
   segway_rmp:
     status: maintained
     tags:
@@ -1579,7 +1686,10 @@ repositories:
     url: https://github.com/ros-gbp/slam_gmapping-release.git
     version: 1.3.0-1
   sql_database:
+    tags:
+      release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/sql_database-release.git
+    version: 0.4.7-0
   srdfdom:
     status: maintained
     tags:
@@ -1604,6 +1714,14 @@ repositories:
     version: 0.5.7-0
   tf2_web_republisher:
     url: https://github.com/ros-gbp/tf2_web_republisher-release.git
+  topic_proxy:
+    packages:
+      blob:
+      topic_proxy:
+    tags:
+      release: release/hydro/{package}/{version}
+    url: https://github.com/tu-darmstadt-ros-pkg-gbp/topic_proxy-release.git
+    version: 0.1.0-0
   turtlebot:
     packages:
       linux_hardware:
@@ -1614,7 +1732,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/turtlebot-release/turtlebot-release.git
-    version: 2.1.1-0
+    version: 2.1.1-2
   turtlebot_apps:
     packages:
       pano_core:
@@ -1630,13 +1748,12 @@ repositories:
       turtlebot_follower:
       turtlebot_navigation:
       turtlebot_panorama:
-      turtlebot_sounds:
       turtlebot_teleop:
     status: developed
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/turtlebot-release/turtlebot_apps-release.git
-    version: 2.1.1-0
+    version: 2.1.1-1
   turtlebot_create:
     packages:
       create_description:
@@ -1647,7 +1764,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/turtlebot-release/turtlebot_create-release.git
-    version: 2.1.0-5
+    version: 2.1.0-7
   turtlebot_create_desktop:
     packages:
       create_dashboard:
@@ -1657,7 +1774,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/turtlebot-release/turtlebot_create_desktop-release.git
-    version: 2.1.0-1
+    version: 2.1.0-3
   turtlebot_simulator:
     packages:
       turtlebot_gazebo:
@@ -1666,7 +1783,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/turtlebot-release/turtlebot_simulator-release.git
-    version: 2.0.0-0
+    version: 2.0.0-2
   turtlebot_viz:
     packages:
       turtlebot_dashboard:
@@ -1797,7 +1914,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/visualization_tutorials-release.git
-    version: 0.8.1-0
+    version: 0.8.2-0
   warehouse_ros:
     status: maintained
     tags:
@@ -1824,7 +1941,7 @@ repositories:
     tags:
       release: release/hydro/{package}/{version}
     url: https://github.com/ros-gbp/xacro-release.git
-    version: 1.8.3-2
+    version: 1.8.4-0
   xdot:
     tags:
       release: release/hydro/{package}/{version}
