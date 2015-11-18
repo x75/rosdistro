@@ -179,6 +179,9 @@ assimp-dev:
     vivid:
       apt:
         packages: [libassimp-dev]
+    wily:
+      apt:
+        packages: [libassimp-dev]
 atlas:
   arch: [atlas-lapack]
   debian: [libatlas-base-dev]

@@ -121,6 +121,8 @@ python-argparse:
       packages: []
     vivid:
       packages: []
+    wily:
+      packages: []
 python-autobahn:
   debian: [python-autobahn]
   fedora:
@@ -270,6 +272,7 @@ python-catkin-pkg:
     trusty_python3: [python3-catkin-pkg]
     utopic: [python-catkin-pkg]
     vivid: [python-catkin-pkg]
+    wily: [python-catkin-pkg]
 python-catkin-tools:
   fedora: [python-catkin_tools]
   osx:
@@ -785,6 +788,8 @@ python-matplotlib:
     utopic_python3: [python3-matplotlib]
     vivid: [python-matplotlib]
     vivid_python3: [python3-matplotlib]
+    wily: [python-matplotlib]
+    wily_python3: [python3-matplotlib]
 python-mechanize:
   arch: [python2-mechanize]
   debian: [python-mechanize]
@@ -993,6 +998,7 @@ python-opengl:
     trusty_python3: [python3-opengl]
     utopic: [python-opengl]
     vivid: [python-opengl]
+    wily: [python-opengl]
 python-pandas:
   debian: [python-pandas]
   fedora: [python-pandas]
