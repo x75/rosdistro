@@ -340,6 +340,9 @@ boost:
     vivid:
       apt:
         packages: [libboost-all-dev]
+    wily:
+      apt:
+        packages: [libboost-all-dev]
 box2d-dev:
   arch: [box2d]
   debian: [libbox2d-dev]
@@ -1204,6 +1207,7 @@ libconsole-bridge-dev:
     trusty: [libconsole-bridge-dev]
     utopic: [libconsole-bridge-dev]
     vivid: [libconsole-bridge-dev]
+    wily: [libconsole-bridge-dev]
 libdbus-dev:
   arch: [dbus-core]
   debian: [libdbus-1-dev]
@@ -1744,6 +1748,7 @@ libopencv-dev:
     trusty: [libopencv-dev]
     utopic: [libopencv-dev]
     vivid: [libopencv-dev]
+    wily: [libopencv-dev]
 libopenni-dev:
   arch: [openni]
   debian: [libopenni-dev]
@@ -2322,6 +2327,7 @@ liburdfdom-dev:
     trusty: [liburdfdom-dev]
     utopic: [liburdfdom-dev]
     vivid: [liburdfdom-dev]
+    wily: [liburdfdom-dev]
 liburdfdom-headers-dev:
   arch: [urdfdom-headers]
   debian: [liburdfdom-headers-dev]
@@ -2332,6 +2338,7 @@ liburdfdom-headers-dev:
     trusty: [liburdfdom-headers-dev]
     utopic: [liburdfdom-headers-dev]
     vivid: [liburdfdom-headers-dev]
+    wily: [liburdfdom-headers-dev]
 liburdfdom-tools:
   debian: [liburdfdom-tools]
   fedora: [urdfdom]
@@ -2585,6 +2592,7 @@ lz4:
     trusty: [liblz4-dev]
     utopic: [liblz4-dev]
     vivid: [liblz4-dev]
+    wily: [liblz4-dev]
 m4:
   arch: [m4]
   debian: [m4]
@@ -3604,6 +3612,7 @@ yaml-cpp:
     trusty_python3: [libyaml-cpp-dev]
     utopic: [libyaml-cpp-dev]
     vivid: [libyaml-cpp-dev]
+    wily: [libyaml-cpp-dev]
 yasm:
   arch: [yasm]
   debian: [yasm]

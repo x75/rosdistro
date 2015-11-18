@@ -78,6 +78,7 @@ python:
     trusty_python3: [python3-dev]
     utopic: [python-dev]
     vivid: [python-dev]
+    wily: [python-dev]
 python-alembic:
   fedora: [python-alembic]
   ubuntu:
@@ -355,6 +356,7 @@ python-coverage:
     trusty_python3: [python3-coverage]
     utopic: [python-coverage]
     vivid: [python-coverage]
+    wily: [python-coverage]
 python-cpplint:
   debian:
     pip:
@@ -674,6 +676,7 @@ python-imaging:
     trusty_python3: [python3-imaging]
     utopic: [python-imaging]
     vivid: [python-imaging]
+    wily: [python-imaging]
 python-impacket:
   debian: [python-impacket]
   fedora: [python-impacket]
@@ -811,6 +814,7 @@ python-mock:
     trusty_python3: [python3-mock]
     utopic: [python-mock]
     vivid: [python-mock]
+    wily: [python-mock]
 python-msgpack:
   debian: [python-msgpack]
   fedora: [python-msgpack]
@@ -916,6 +920,7 @@ python-nose:
     trusty_python3: [python3-nose]
     utopic: [python-nose]
     vivid: [python-nose]
+    wily: [python-nose]
 python-numpy:
   arch: [python2-numpy]
   debian: [python-numpy]
@@ -938,6 +943,7 @@ python-numpy:
     trusty_python3: [python3-numpy]
     utopic: [python-numpy]
     vivid: [python-numpy]
+    wily: [python-numpy]
 python-oauth2:
   debian: [python-oauth2]
   fedora: [python-oauth2]
@@ -1119,6 +1125,7 @@ python-psutil:
     trusty_python3: [python3-psutil]
     utopic: [python-psutil]
     vivid: [python-psutil]
+    wily: [python-psutil]
 python-psycopg2:
   fedora: [python-psycopg2]
   ubuntu:
@@ -1229,6 +1236,7 @@ python-pygraphviz:
     trusty: [python-pygraphviz]
     utopic: [python-pygraphviz]
     vivid: [python-pygraphviz]
+    wily: [python-pygraphviz]
 python-pykalman:
   debian:
     pip:
@@ -1401,6 +1409,7 @@ python-qt-bindings:
     trusty_python3: [python3-pyside, libpyside-dev, libshiboken-dev, shiboken, python3-pyqt4, python3-sip-dev]
     utopic: [python-pyside, libpyside-dev, libshiboken-dev, shiboken, python-qt4, python-qt4-dev, python-sip-dev]
     vivid: [python-pyside, libpyside-dev, libshiboken-dev, shiboken, python-qt4, python-qt4-dev, python-sip-dev]
+    wily: [python-pyside, libpyside-dev, libshiboken-dev, shiboken, python-qt4, python-qt4-dev, python-sip-dev]
 python-qt-bindings-gl:
   arch: [python2-pyqt4]
   debian: [python-qt4-gl]
@@ -1601,6 +1610,7 @@ python-rospkg:
     trusty_python3: [python3-rospkg]
     utopic: [python-rospkg]
     vivid: [python-rospkg]
+    wily: [python-rospkg]
 python-rrdtool:
   ubuntu:
     lucid: [python-rrdtool]
@@ -1741,6 +1751,7 @@ python-sip:
     trusty_python3: [python3-sip-dev]
     utopic: [python-sip-dev]
     vivid: [python-sip-dev]
+    wily: [python-sip-dev]
 python-sip4:
   fedora: [sip]
   macports: [py27-sip4]
@@ -2136,6 +2147,7 @@ python-yaml:
     trusty_python3: [python3-yaml]
     utopic: [python-yaml]
     vivid: [python-yaml]
+    wily: [python-yaml]
 python-zmq:
   debian: [python-zmq]
   fedora: [python-zmq]
