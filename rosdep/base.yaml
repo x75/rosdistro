@@ -130,6 +130,9 @@ assimp:
     vivid:
       apt:
         packages: [libassimp-dev]
+    wily:
+      apt:
+        packages: [libassimp-dev]
 assimp-dev:
   arch: [assimp]
   debian:
@@ -1729,6 +1732,7 @@ libogre-dev:
     trusty: [libogre-1.8-dev]
     utopic: [libogre-1.9-dev]
     vivid: [libogre-1.9-dev]
+    wily: [libogre-1.9-dev]
 libois-dev:
   arch: [ois]
   debian: [libois-dev]

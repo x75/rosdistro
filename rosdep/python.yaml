@@ -243,6 +243,7 @@ python-cairo:
     trusty: [python-cairo]
     utopic: [python-cairo]
     vivid: [python-cairo]
+    wily: [python-cairo]
 python-catkin-lint:
   fedora: [python-catkin_lint]
   ubuntu: [python-catkin-lint]
@@ -483,6 +484,7 @@ python-empy:
     trusty: [python-empy]
     utopic: [python-empy]
     vivid: [python-empy]
+    wily: [python-empy]
 python-enum:
   fedora: [python-enum]
   ubuntu:
@@ -885,6 +887,7 @@ python-netifaces:
     trusty_python3: [python3-netifaces]
     utopic: [python-netifaces]
     vivid: [python-netifaces]
+    wily: [python-netifaces]
 python-networkx:
   fedora: [python-networkx]
   ubuntu:
@@ -1024,6 +1027,7 @@ python-paramiko:
     trusty: [python-paramiko]
     utopic: [python-paramiko]
     vivid: [python-paramiko]
+    wily: [python]
 python-passlib:
   fedora: [python-passlib]
   ubuntu: [python-passlib]
@@ -1184,6 +1188,7 @@ python-pydot:
     trusty: [python-pydot]
     utopic: [python-pydot]
     vivid: [python-pydot]
+    wily: [python-pydot]
 python-pygame:
   debian: [python-pygame]
   fedora: [pygame-devel]
@@ -1428,6 +1433,7 @@ python-qt-bindings-gl:
     trusty: [python-qt4-gl]
     utopic: [python-qt4-gl]
     vivid: [python-qt4-gl]
+    wily: [python-qt4-gl]
 python-qt-bindings-qwt5:
   arch: [pyqwt]
   debian: [python-qwt5-qt4]
@@ -1446,6 +1452,7 @@ python-qt-bindings-qwt5:
     trusty: [python-qwt5-qt4]
     utopic: [python-qwt5-qt4]
     vivid: [python-qwt5-qt4]
+    wily: [python-qwt5-qt4]
 python-qt4-gl:
   debian:
     apt:
@@ -1542,6 +1549,7 @@ python-rosdep:
     trusty_python3: [python3-rosdep]
     utopic: [python-rosdep]
     vivid: [python-rosdep]
+    wily: [python-rosdep]
 python-rosdistro:
   debian: [python-rosdistro]
   fedora: [python-rosdistro]
