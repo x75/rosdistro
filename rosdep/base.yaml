@@ -1,3 +1,12 @@
+ace:
+  arch: [ace]
+  debian: [libace-dev]
+  gentoo: [dev-libs/ace]
+  ubuntu: [libace-dev]
+acpi:
+  fedora: [acpi]
+  gentoo: [sys-power/acpi]
+  ubuntu: [acpi]
 alsa-oss:
   arch: [alsa-oss]
   debian: [alsa-oss]
@@ -5,6 +14,7 @@ alsa-oss:
   gentoo:
     portage:
       packages: [media-libs/alsa-oss]
+  ubuntu: [alsa-oss]
 alsa-utils:
   arch: [alsa-utils]
   debian: [alsa-utils]
@@ -12,6 +22,7 @@ alsa-utils:
   gentoo:
     portage:
       packages: [media-sound/alsa-utils]
+  ubuntu: [alsa-utils]
 ant:
   arch: [apache-ant]
   debian: [ant]
@@ -27,6 +38,8 @@ ant:
     precise: [ant]
     quantal: [ant]
     raring: [ant]
+    saucy: [ant]
+    trusty: [ant]
 antlr:
   arch: [antlr]
   debian: [antlr, libantlr-dev]
@@ -49,6 +62,10 @@ apr:
   opensuse: [libapr1, libapr-util1]
   rhel: [apr-devel, apr-util]
   ubuntu: [libapr1-dev, libaprutil1-dev]
+arduino-core:
+  fedora: [arduino-core]
+  gentoo: [dev-embedded/arduino]
+  ubuntu: [arduino-core]
 arista:
   arch: [arista-transcoder]
   debian: [arista]
@@ -59,6 +76,7 @@ arista:
 armadillo:
   arch: [armadillo]
   debian: [libarmadillo-dev]
+  fedora: [armadillo-devel]
   gentoo:
     portage:
       packages: [sci-libs/armadillo]
@@ -68,10 +86,15 @@ armadillo:
 assimp:
   arch: [assimp]
   debian:
+    jessie: [libassimp-dev]
     sid: [libassimp-dev]
     wheezy: [libassimp-dev]
   fedora: [assimp]
-  gentoo: [assimp]
+  gentoo:
+    portage:
+      packages: [media-libs/assimp]
+  macports: [assimp]
+  opensuse: [libassimp3]
   rhel: [assimp-devel]
   ubuntu:
     lucid:
@@ -92,11 +115,33 @@ assimp:
     raring:
       apt:
         packages: [libassimp-dev]
+    saucy:
+      apt:
+        packages: [libassimp-dev]
+    trusty:
+      apt:
+        packages: [libassimp-dev]
+    trusty_python3:
+      apt:
+        packages: [libassimp-dev]
+    utopic:
+      apt:
+        packages: [libassimp-dev]
+    vivid:
+      apt:
+        packages: [libassimp-dev]
 assimp-dev:
   arch: [assimp]
   debian:
+    jessie: [libassimp-dev]
     sid: [libassimp-dev]
+    wheezy: [libassimp-dev]
   fedora: [assimp-devel]
+  gentoo:
+    portage:
+      packages: [media-libs/assimp]
+  opensuse: [libassimp3]
+  rhel: [assimp-devel]
   ubuntu:
     lucid:
       apt:
@@ -114,6 +159,21 @@ assimp-dev:
       apt:
         packages: [libassimp-dev]
     raring:
+      apt:
+        packages: [libassimp-dev]
+    saucy:
+      apt:
+        packages: [libassimp-dev]
+    trusty:
+      apt:
+        packages: [libassimp-dev]
+    trusty_python3:
+      apt:
+        packages: [libassimp-dev]
+    utopic:
+      apt:
+        packages: [libassimp-dev]
+    vivid:
       apt:
         packages: [libassimp-dev]
 atlas:
@@ -152,6 +212,7 @@ automake:
 autopoint:
   arch: [gettext]
   debian: [autopoint]
+  fedora: [gettext-devel]
   ubuntu: [autopoint]
 avahi-daemon:
   arch: [avahi]
@@ -178,8 +239,8 @@ avrdude:
   arch: [avrdude]
   fedora: [avrdude]
   gentoo:
-  portage:
-    packages: [dev-embedded/avrdude]
+    portage:
+      packages: [dev-embedded/avrdude]
   ubuntu: [avrdude]
 bazaar:
   arch: [bzr]
@@ -203,7 +264,7 @@ beep:
 binutils:
   arch: [binutils]
   debian: [binutils-dev]
-  fedora: [binutils]
+  fedora: [binutils-devel]
   gentoo:
     portage:
       packages: [sys-devel/binutils]
@@ -217,6 +278,10 @@ bison:
       packages: [sys-devel/bison]
   macports: [bison]
   ubuntu: [bison]
+blender:
+  fedora: [blender]
+  gentoo: [media-gfx/blender]
+  ubuntu: [blender]
 bluez:
   arch: [bluez]
   debian: [bluez]
@@ -228,6 +293,7 @@ boost:
   arch: [boost]
   cygwin: [libboost-devel, libboost1.40]
   debian:
+    jessie: [libboost-all-dev]
     sid: [libboost-all-dev]
     squeeze: [libboost1.42-all-dev]
     wheezy: [libboost-all-dev]
@@ -259,13 +325,37 @@ boost:
     raring:
       apt:
         packages: [libboost-all-dev]
+    saucy:
+      apt:
+        packages: [libboost-all-dev]
+    trusty:
+      apt:
+        packages: [libboost-all-dev]
+    trusty_python3:
+      apt:
+        packages: [libboost-all-dev]
+    utopic:
+      apt:
+        packages: [libboost-all-dev]
+    vivid:
+      apt:
+        packages: [libboost-all-dev]
+box2d-dev:
+  arch: [box2d]
+  debian: [libbox2d-dev]
+  fedora: [Box2D-devel]
+  ubuntu: [libbox2d-dev]
 bullet:
   arch: [bullet]
+  debian:
+    jessie: [libbullet-dev]
+    sid: [libbullet-dev]
   fedora: [bullet-devel]
   gentoo:
-  portage:
-    packages: [sci-physics/bullet]
-  debian: [libbullet-dev]
+    portage:
+      packages: [sci-physics/bullet]
+  macports: [bullet]
+  opensuse: [libbullet]
   ubuntu:
     precise:
       apt:
@@ -274,6 +364,21 @@ bullet:
       apt:
         packages: [libbullet-dev]
     raring:
+      apt:
+        packages: [libbullet-dev]
+    saucy:
+      apt:
+        packages: [libbullet-dev]
+    trusty:
+      apt:
+        packages: [libbullet-dev]
+    trusty_python3:
+      apt:
+        packages: [libbullet-dev]
+    utopic:
+      apt:
+        packages: [libbullet-dev]
+    vivid:
       apt:
         packages: [libbullet-dev]
 bzip2:
@@ -289,6 +394,27 @@ bzip2:
   opensuse: [libbz2-devel]
   rhel: [bzip2-devel]
   ubuntu: [libbz2-dev]
+ca-certificates:
+  debian: [ca-certificates]
+  fedora: [ca-certificates]
+  ubuntu: [ca-certificates]
+can-utils:
+  ubuntu:
+    trusty: [can-utils]
+    utopic: [can-utils]
+    vivid: [can-utils]
+catkin_pkg:
+  gentoo:
+    portage:
+      packages: [dev-python/catkin_pkg]
+cdk:
+  fedora: [cdk]
+  gentoo: [dev-libs/cdk]
+  ubuntu: [libcdk5]
+cdk-dev:
+  fedora: [cdk-devel]
+  gentoo: [dev-libs/cdk]
+  ubuntu: [libcdk5-dev]
 cgal:
   arch: [cgal]
   debian: [libcgal-dev]
@@ -307,11 +433,16 @@ checkinstall:
   ubuntu:
     apt:
       packages: [checkinstall]
+chromium-browser:
+  gentoo: [www-client/chromium]
+  ubuntu: [chromium-browser]
 cmake:
   arch: [cmake]
   debian: [cmake]
   fedora: [cmake]
   gentoo: [dev-util/cmake]
+  macports: [cmake]
+  opensuse: [cmake]
   ubuntu: [cmake]
 coinor-libipopt-dev:
   arch: [coinor-all]
@@ -322,11 +453,19 @@ collada-dom:
   arch: [collada-dom]
   debian: [collada-dom-dev]
   fedora: [collada-dom-devel]
+  gentoo:
+    portage:
+      packages: [media-libs/collada-dom]
+  macports: [collada-dom]
   ubuntu: [collada-dom-dev]
+comedi:
+  fedora: [comedilib-devel]
+  ubuntu: [libcomedi-dev]
 coreutils:
   arch: [coreutils]
   debian: [coreutils]
   fedora: [coreutils]
+  gentoo: [sys-apps/coreutils]
   ubuntu: [coreutils]
 couchdb:
   arch: [couchdb]
@@ -348,6 +487,10 @@ cppunit:
   opensuse: [libcppunit-devel]
   rhel: [cppunit-devel]
   ubuntu: [libcppunit-dev]
+crypto++:
+  fedora: [cryptopp-devel]
+  gentoo: [dev-libs/crypto++]
+  ubuntu: [libcrypto++-dev]
 curl:
   arch: [curl]
   debian: [libcurl4-openssl-dev]
@@ -374,6 +517,19 @@ daemontools:
     portage:
       packages: [sys-process/daemontools]
   ubuntu: [daemontools]
+dfu-util:
+  debian: [dfu-util]
+  fedora: [dfu-util]
+  gentoo: [app-mobilephone/dfu-util]
+  ubuntu: [dfu-util]
+disper:
+  fedora: [disper]
+  gentoo: [x11-apps/disper]
+  ubuntu: [disper]
+dnsmasq:
+  fedora: [dnsmasq]
+  gentoo: [net-dns/dnsmasq]
+  ubuntu: [dnsmasq]
 doxygen:
   arch: [doxygen]
   debian: [doxygen]
@@ -383,13 +539,23 @@ doxygen:
   macports: [doxygen]
   rhel: [doxygen]
   ubuntu: [doxygen]
+dpkg:
+  arch: [dpkg]
+  debian: [dpkg]
+  fedora: [dpkg]
+  gentoo: [app-arch/dpkg]
+  ubuntu: [dpkg]
+dvipng:
+  fedora: [texlive-dvipng-bin]
+  gentoo: [app-text/dvipng]
+  ubuntu: [dvipng]
 eclipse:
   arch: [eclipse, eclipse-rcp, eclipse-emf, eclipse-pde]
   debian: [eclipse, eclipse-rcp, eclipse-xsd, eclipse-pde]
-  fedora: [eclipse-pde,eclipse-emf]
+  fedora: [eclipse-pde, eclipse-emf]
   gentoo:
     portage:
-      packages: [dev-java/ant-eclipse-ecj, dev-util/eclipse-sdk, dev-java/eclipse-ecj]
+      packages: [dev-java/ant-eclipse-ecj, dev-util/eclipse-sdk-bin, dev-java/eclipse-ecj]
   ubuntu:
     karmic: [eclipse, eclipse-platform, eclipse-rcp, eclipse-pde]
     lucid: [eclipse, eclipse-platform, eclipse-rcp, eclipse-pde]
@@ -402,29 +568,50 @@ eclipse:
 eigen:
   arch: [eigen3]
   debian:
+    jessie: [libeigen3-dev]
     sid: [libeigen3-dev]
     wheezy: [libeigen3-dev]
   fedora: [eigen3-devel]
   gentoo:
     portage:
       packages: [dev-cpp/eigen]
+  macports: [eigen3]
+  opensuse: [libeigen3-devel]
   rhel: [eigen3-devel]
   ubuntu:
     apt:
       packages: [libeigen3-dev]
 eigen2:
   arch: [eigen2]
+  fedora: [eigen2-devel]
+  opensuse: [libeigen2-devel]
   ubuntu:
     apt:
       packages: [libeigen2-dev]
+eigen3:
+  fedora: [eigen3-devel]
+  gentoo:
+    portage:
+      packages: [dev-cpp/eigen]
+emacs:
+  fedora: [emacs]
+  gentoo: [virtual/emacs]
+  ubuntu: [emacs]
+enet:
+  fedora: [enet-devel]
+  ubuntu: [libenet-dev]
 epydoc:
   arch: [epydoc]
   debian: [python-epydoc]
   fedora: [epydoc]
   freebsd: [epydoc]
   gentoo: [dev-python/epydoc]
-  macports: [py26-epydoc]
+  macports: [py27-epydoc]
   ubuntu: [python-epydoc]
+espeak:
+  fedora: [espeak]
+  gentoo: [app-accessibility/espeak]
+  ubuntu: [espeak]
 f2c:
   arch: [f2c]
   debian: [f2c, libf2c2, libf2c2-dev]
@@ -442,7 +629,7 @@ fcgi:
       packages: [dev-ruby/fcgi]
   ubuntu: [libfcgi-dev, libapache2-mod-fastcgi, spawn-fcgi]
 festival:
-  arch: [festival, festival-kallpc16k]
+  arch: [festival, festival-english]
   debian: [festival, festvox-kallpc16k]
   fedora: [festival, festvox-kal-diphone]
   gentoo:
@@ -457,7 +644,18 @@ ffmpeg:
     portage:
       packages: [media-plugins/ffmpeg]
   macports: [ffmpeg]
-  ubuntu: [ffmpeg, libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev]
+  ubuntu:
+    lucid: [ffmpeg, libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev]
+    maverick: [ffmpeg, libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev]
+    natty: [ffmpeg, libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev]
+    oneiric: [ffmpeg, libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev]
+    precise: [ffmpeg, libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev]
+    quantal: [ffmpeg, libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev]
+    raring: [ffmpeg, libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev]
+    saucy: [ffmpeg, libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev]
+    trusty: [libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev]
+    utopic: [libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev]
+    vivid: [libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev]
 ffmpeg2theora:
   arch: [ffmpeg2theora]
   debian: [ffmpeg2theora]
@@ -470,7 +668,7 @@ flex:
   gentoo: [sys-devel/flex]
   macports: [flex]
   ubuntu: [flex]
-fltk:
+fltk:  # Consider using the libfltk-dev and fluid (fltk runtime) keys instead.
   arch: [fltk]
   debian: [libfltk1.1-dev]
   fedora: [fltk-devel, fltk-fluid]
@@ -478,32 +676,82 @@ fltk:
   gentoo: [=x11-libs/fltk-1*]
   macports: [fltk]
   opensuse: [fltk-devel]
-  ubuntu: [fluid, libfltk1.1-dev]
+  ubuntu:
+    lucid: [fluid, libfltk1.1-dev]
+    maverick: [fluid, libfltk1.1-dev]
+    natty: [fluid, libfltk1.1-dev]
+    oneiric: [fluid, libfltk1.1-dev]
+    precise: [fluid, libfltk1.1-dev]
+    quantal: [fluid, libfltk1.1-dev]
+    raring: [fluid, libfltk1.1-dev]
+    saucy: [fluid, libfltk1.1-dev]
+    trusty: [fluid, libfltk1.1-dev]
+    utopic: [fluid, libfltk1.3-dev]
+    vivid: [fluid, libfltk1.3-dev]
+fluid:
+  arch: [fltk]
+  debian: [libfltk1.1-dev]
+  fedora: [fltk-fluid]
+  freebsd: [fltk]
+  gentoo: [=x11-libs/fltk-1*]
+  macports: [fltk]
+  opensuse: [fltk-devel]
+  ubuntu: [fluid]
 freeimage:
   arch: [freeimage]
   debian: [libfreeimage-dev]
   fedora: [freeimage-devel]
-  gentoo: [freeimage]
+  gentoo: [media-libs/freeimage]
   macports: [freeimage]
   rhel: [freeimage-devel]
   ubuntu: [libfreeimage-dev]
+freetype:
+  fedora: [freetype]
+  gentoo: [media-libs/freetype]
+  macports: [freetype]
 ftdi-eeprom:
-  arch: [ftdi_eeprom-git]
+  arch: [libftdi]
   debian: [ftdi-eeprom]
   fedora: [libftdi-devel, libftdi-c++-devel]
   ubuntu: [ftdi-eeprom]
+g++-multilib:
+  fedora: [gcc-c++, glibc-devel, 'glibc-devel(%{__isa_name}-32)', glibc-static, 'glibc-static(%{__isa_name}-32)', libstdc++-devel, 'libstdc++-devel(%{__isa_name}-32)', libstdc++-static, 'libstdc++-static(%{__isa_name}-32)']
+  gentoo: [sys-devel/multilib-gcc-wrapper]
+  ubuntu: [g++-multilib]
+g++-static:
+  fedora: [gcc-c++, glibc-devel, glibc-static, libstdc++-devel, libstdc++-static]
+  ubuntu: [g++]
+gawk:
+  fedora: [gawk]
+  ubuntu: [gawk]
 gazebo:
-  arch: [gazebo-hg]
-  gentoo:
-    portage:
-      packages: [sci-electronics/gazebo]
-  ubuntu: [gazebo]
+  arch: [gazebo]
+  fedora: [gazebo-devel]
+  gentoo: [sci-electronics/gazebo]
+  ubuntu:
+    precise: [gazebo]
+    quantal: [gazebo]
+    raring: [gazebo]
+    saucy: [gazebo2]
+    trusty: [gazebo2]
+gazebo5:
+  arch: [gazebo]
+  fedora: [gazebo]
+  gentoo: [sci-electronics/gazebo]
+  ubuntu: [gazebo5]
 gcc-avr:
   arch: [avr-gcc]
   debian: [gcc-avr]
   fedora: [avr-gcc]
   gentoo: [cross-avr/gcc]
   ubuntu: [gcc-avr]
+gcc-multilib:
+  fedora: [gcc, glibc-devel, 'glibc-devel(%{__isa_name}-32)', glibc-static, 'glibc-static(%{__isa_name}-32)']
+  gentoo: [sys-devel/multilib-gcc-wrapper]
+  ubuntu: [gcc-multilib]
+gcc-static:
+  fedora: [gcc, glibc-devel, glibc-static]
+  ubuntu: [gcc]
 gccxml:
   arch: [gccxml-git]
   debian: [gccxml]
@@ -511,12 +759,20 @@ gccxml:
   gentoo:
     portage:
       packages: [dev-cpp/gccxml]
+  macports: [gccxml-devel]
   ubuntu: [gccxml]
+gdal-bin:
+  fedora: [gdal]
+  gentoo: [sci-libs/gdal]
+  ubuntu: [gdal-bin]
+geos:
+  fedora: [geos-devel]
+  ubuntu: [libgeos-dev]
 gforth:
   arch: [gforth]
   debian: [gforth]
   fedora: [gforth]
-  gentoo: [gforth]
+  gentoo: [dev-lang/gforth]
   macports: [gforth]
   ubuntu: [gforth]
 gfortran:
@@ -535,6 +791,10 @@ gifsicle:
     portage:
       packages: [media-gfx/gifsicle]
   ubuntu: [gifsicle]
+gimp:
+  fedora: [gimp]
+  gentoo: [media-gfx/gimp]
+  ubuntu: [gimp]
 git:
   arch: [git]
   debian: [git-core]
@@ -544,6 +804,10 @@ git:
   macports: [git-core]
   opensuse: [git-core]
   ubuntu: [git-core]
+gitg:
+  fedora: [gitg]
+  gentoo: [dev-vcs/gitg]
+  ubuntu: [gitg]
 glc:
   arch: [glc]
   gentoo:
@@ -553,8 +817,8 @@ glut:
   arch: [freeglut]
   debian: [freeglut3-dev]
   fedora: [freeglut-devel]
-  gentoo: [freeglut]
-  macports: [mesa]
+  gentoo: [media-libs/freeglut]
+  macports: [freeglut]
   rhel: [freeglut-devel]
   ubuntu: [freeglut3-dev]
 gnuplot:
@@ -564,6 +828,19 @@ gnuplot:
     portage:
       packages: [sci-visualization/gnuplot]
   ubuntu: [gnuplot]
+google-mock:
+  arch: [gmock]
+  debian: [google-mock]
+  fedora: [gmock-devel]
+  freebsd: [googlemock]
+  gentoo: [dev-cpp/gmock]
+  opensuse: [gmock-devel]
+  rhel: [gmock-devel]
+  ubuntu: [google-mock]
+gperftools:
+  fedora: [gperftools, gperftools-devel]
+  gentoo: [dev-util/gperf]
+  ubuntu: [google-perftools, libgoogle-perftools-dev]
 gradle:
   arch: [gradle]
   fedora: [gradle]
@@ -572,7 +849,7 @@ graphicsmagick:
   arch: [graphicsmagick]
   debian: [libgraphicsmagick++1-dev]
   fedora: [GraphicsMagick-c++-devel]
-  gentoo: [imagemagick]
+  gentoo: [media-gfx/imagemagick]
   macports: [GraphicsMagick]
   ubuntu: [libgraphicsmagick++1-dev]
 graphviz:
@@ -585,6 +862,10 @@ graphviz:
   opensuse: [graphviz]
   rhel: [graphviz]
   ubuntu: [graphviz]
+gringo:
+  fedora: [gringo]
+  gentoo: [dev-libs/libgringotts]
+  ubuntu: [gringo]
 gstreamer0.10-plugins-good:
   arch: [gstreamer0.10-good-plugins]
   debian: [gstreamer0.10-plugins-good]
@@ -608,16 +889,30 @@ gstreamer0.10-plugins-ugly:
     precise: [gstreamer0.10-plugins-ugly]
     quantal: [gstreamer0.10-plugins-ugly]
     raring: [gstreamer0.10-plugins-ugly]
+    saucy: [gstreamer0.10-plugins-ugly]
+    trusty: [gstreamer0.10-plugins-ugly]
+    utopic: [gstreamer0.10-plugins-ugly]
+    vivid: [gstreamer0.10-plugins-ugly]
+    wily: [gstreamer0.10-plugins-ugly]
 gstreamer0.10-pocketsphinx:
+  fedora: [pocketsphinx-plugin]
   ubuntu: [gstreamer0.10-pocketsphinx]
+gstreamer1.0-plugins-good:
+  debian: [gstreamer1.0-plugins-good]
+  ubuntu: [gstreamer1.0-plugins-good]
+gstreamer1.0-plugins-ugly:
+  debian: [gstreamer1.0-plugins-ugly]
+  ubuntu: [gstreamer1.0-plugins-ugly]
 gtest:
   arch: [gtest]
   debian: [libgtest-dev]
   fedora: [gtest-devel]
   freebsd: [googletest]
-  gentoo: [dev-cpp/gtest]
-  macports: [google-test]
-  opensuse: [gtest-devel]
+  gentoo:
+    portage:
+      packages: [dev-cpp/gtest]
+  macports: [ros-gtest]
+  opensuse: [googletest-devel]
   rhel: [gtest-devel]
   ubuntu: [libgtest-dev]
 gtk-doc-tools:
@@ -653,12 +948,15 @@ hddtemp:
   gentoo:
     portage:
       packages: [app-admin/hddtemp]
+  macports: [python27]
+  opensuse: [hddtemp]
   ubuntu: [hddtemp]
 hdf5:
   arch: [hdf5]
   debian: [libhdf5-serial-dev]
-  fedora: [hdf5]
+  fedora: [hdf5-devel]
   gentoo: [sci-libs/hdf5]
+  macports: [hdf5]
   ubuntu: [libhdf5-serial-dev]
 hostapd:
   arch: [hostapd]
@@ -668,6 +966,18 @@ hostapd:
     portage:
       packages: [net-wireless/hostapd]
   ubuntu: [hostapd]
+hostname:
+  arch: [inetutils]
+  debian: [hostname]
+  fedora: [hostname]
+  gentoo: [dev-haskell/hostname]
+  ubuntu: [hostname]
+i2c-tools:
+  debian: [i2c-tools]
+  fedora: [i2c-tools]
+  gentoo: [sys-apps/i2c-tools]
+  opensuse: [i2c-tools]
+  ubuntu: [i2c-tools]
 imagemagick:
   arch: [imagemagick]
   debian: [imagemagick]
@@ -684,6 +994,10 @@ intltool:
   gentoo: [dev-util/intltool]
   opensuse: [intltool]
   ubuntu: [intltool]
+iperf:
+  fedora: [iperf]
+  gentoo: [net-misc/iperf]
+  ubuntu: [iperf]
 ipmitool:
   arch: [ipmitool]
   debian: [ipmitool]
@@ -692,27 +1006,45 @@ ipmitool:
     portage:
       packages: [sys-apps/ipmitool]
   ubuntu: [ipmitool]
+jack:
+  arch: [jack]
+  debian: [libjack-jackd2-dev]
+  fedora: [jack-audio-connection-kit-devel]
+  gentoo: [media-sound/jack]
+  ubuntu: [libjack-jackd2-dev]
 jasper:
   arch: [jasper]
   debian: [libjasper-dev]
   fedora: [jasper-devel]
-  gentoo: [jasper]
+  gentoo: [media-libs/jasper]
   macports: [jasper]
+  opensuse: [libjasper-devel]
   ubuntu: [libjasper-dev]
 java:
-  arch: [openjdk6]
+  arch: [jdk7-openjdk]
   debian: [openjdk-6-jdk]
-  fedora: [java-1.8.0-openjdk, java-1.7.0-openjdk]
+  fedora:
+    '21': [java-1.8.0-openjdk]
+    '22': [java-1.8.0-openjdk]
+    beefy: [java-1.7.0-openjdk]
+    heisenbug: [java-1.8.0-openjdk, java-1.7.0-openjdk]
+    schrödinger’s: [java-1.8.0-openjdk, java-1.7.0-openjdk]
+    spherical: [java-1.7.0-openjdk]
   freebsd: [openjdk6]
   gentoo: [dev-java/sun-jdk]
   ubuntu: [default-jdk]
 joystick:
-  arch: [joyutils]
+  arch: [linuxconsole]
   debian: [joystick]
   fedora:
+    '21': [linuxconsoletools]
+    '22': [linuxconsoletools]
     beefy: [joystick]
+    heisenbug: [linuxconsoletools]
+    schrödinger’s: [linuxconsoletools]
     spherical: [linuxconsoletools]
   gentoo: [games-util/joystick]
+  opensuse: [input-utils]
   rhel: [joystick]
   ubuntu: [joystick]
 jython:
@@ -734,10 +1066,21 @@ kakasi:
 kgraphviewer:
   arch: [kgraphviewer]
   debian: [kgraphviewer]
+  fedora: [kgraphviewer]
   gentoo:
     portage:
       packages: [media-gfx/kgraphviewer]
   ubuntu: [kgraphviewer]
+language-pack-de:
+  fedora: [filesystem]
+  ubuntu: [language-pack-de]
+language-pack-en:
+  fedora: [filesystem]
+  ubuntu: [language-pack-en]
+lib32asound2:
+  debian: [lib32asound2]
+  fedora: ['alsa-lib(%{__isa_name}-32)', alsa-lib]
+  ubuntu: [lib32asound2]
 libann-dev:
   arch: [ann]
   debian: [libann-dev]
@@ -760,15 +1103,34 @@ libargtable2-dev:
       packages: [dev-libs/argtable]
   ubuntu: [libargtable2-dev]
 libaria:
+  debian:
+    jessie: [libaria-dev]
+    sid: [libaria-dev]
+    wheezy:
+      source:
+        md5sum: 589c387995beb951edd9c77f33cb2286
+        uri: 'https://raw.github.com/amor-ros-pkg/rosaria/master/libaria.rdmanifest'
   ubuntu:
-    source:
-      alternate-uri: 'http://aus-www.rasip.fer.hr/libaria.rdmanifest'
-      md5sum: f00cf4b5496b085a6b8ef9ce0389ec0b
-      uri: 'http://amor-ros-pkg.googlecode.com/files/libaria.rdmanifest'
+    precise:
+      source:
+        md5sum: 589c387995beb951edd9c77f33cb2286
+        uri: 'https://raw.github.com/amor-ros-pkg/rosaria/master/libaria.rdmanifest'
+    saucy: [libaria-dev]
+    trusty: [libaria-dev]
+    utopic: [libaria-dev]
+    vivid: [libaria-dev]
 libasound2-dev:
   arch: [alsa-lib]
   fedora: [alsa-lib]
   ubuntu: [libasound2-dev]
+libav:
+  arch: [libav-git]
+  debian: [libav-tools]
+  fedora: []
+  gentoo:
+    portage:
+      packages: [media-video/libav]
+  ubuntu: [libav-tools]
 libavahi-client-dev:
   arch: [avahi]
   debian: [libavahi-client-dev]
@@ -815,6 +1177,7 @@ libcegui-mk2-dev:
       packages: [dev-games/cegui]
   ubuntu: [libcegui-mk2-dev]
 libceres-dev:
+  fedora: [ceres-solver-devel]
   gentoo:
     portage:
       packages: [sci-libs/ceres-solver]
@@ -827,6 +1190,20 @@ libcoin60-dev:
     portage:
       packages: [media-libs/coin]
   ubuntu: [libcoin60-dev]
+libcoin80-dev:
+  debian: [libcoin80-dev]
+  fedora: [Coin2-devel]
+  ubuntu: [libcoin80-dev]
+libconsole-bridge-dev:
+  arch: [console-bridge]
+  debian: [libconsole-bridge-dev]
+  fedora: [console-bridge-devel]
+  gentoo: [dev-libs/console_bridge]
+  ubuntu:
+    saucy: [libconsole-bridge-dev]
+    trusty: [libconsole-bridge-dev]
+    utopic: [libconsole-bridge-dev]
+    vivid: [libconsole-bridge-dev]
 libdbus-dev:
   arch: [dbus-core]
   debian: [libdbus-1-dev]
@@ -869,6 +1246,15 @@ libdrm-dev:
     portage:
       packages: [x11-base/nouveau-drm]
   ubuntu: [libdrm-dev]
+libespeak-dev:
+  debian: [libespeak-dev]
+  fedora: [espeak-devel]
+  ubuntu: [libespeak-dev]
+libev-dev:
+  arch: [libev]
+  debian: [libev-dev]
+  fedora: [libev-devel]
+  ubuntu: [libev-dev]
 libexpat1-dev:
   arch: [expat]
   debian: [libexpat1-dev]
@@ -880,7 +1266,7 @@ libexpat1-dev:
 libfftw3:
   arch: [fftw]
   debian: [libfftw3-3, libfftw3-dev]
-  fedora: [fftw]
+  fedora: [fftw, fftw-devel]
   gentoo:
     portage:
       packages: [sci-libs/fftw]
@@ -892,10 +1278,11 @@ libflann:
   gentoo:
     portage:
       packages: [sci-libs/flann]
+  macports: [flann]
   ubuntu:
-    precise:  [libflann1]
-    quantal:  [libflann1.7]
-    raring:  [libflann1.7]
+    precise: [libflann1]
+    quantal: [libflann1.7]
+    raring: [libflann1.7]
 libflann-dev:
   arch: [flann]
   debian: [libflann-dev]
@@ -903,12 +1290,39 @@ libflann-dev:
   gentoo:
     portage:
       packages: [sci-libs/flann]
+  macports: [flann]
   ubuntu: [libflann-dev]
+libfltk-dev:
+  arch: [fltk]
+  debian: [libfltk1.1-dev]
+  fedora: [fltk-devel]
+  freebsd: [fltk]
+  gentoo: [=x11-libs/fltk-1*]
+  macports: [fltk]
+  opensuse: [fltk-devel]
+  ubuntu:
+    lucid: [libfltk1.1-dev]
+    maverick: [libfltk1.1-dev]
+    natty: [libfltk1.1-dev]
+    oneiric: [libfltk1.1-dev]
+    precise: [libfltk1.1-dev]
+    quantal: [libfltk1.1-dev]
+    raring: [libfltk1.1-dev]
+    saucy: [libfltk1.1-dev]
+    trusty: [libfltk1.1-dev]
+    utopic: [libfltk1.3-dev]
+    vivid: [libfltk1.3-dev]
+libfontconfig1-dev:
+  fedora: [fontconfig-devel]
+  ubuntu: [libfontconfig1-dev]
 libfreenect-dev:
   arch: [libfreenect]
   debian: [libfreenect-dev]
   fedora: [libfreenect-devel]
   ubuntu: [libfreenect-dev]
+libfreetype6:
+  fedora: [freetype-devel]
+  ubuntu: [libfreetype6]
 libftdi-dev:
   arch: [libftdi]
   debian: [libftdi-dev]
@@ -917,6 +1331,9 @@ libftdi-dev:
     portage:
       packages: [dev-embedded/libftdi]
   ubuntu: [libftdi-dev]
+libftdipp-dev:
+  fedora: [libftdi-c++-devel]
+  ubuntu: [libftdipp-dev]
 libftgl-dev:
   arch: [ftgl]
   debian: [libftgl-dev]
@@ -925,6 +1342,13 @@ libftgl-dev:
     portage:
       packages: [media-libs/ftgl]
   ubuntu: [libftgl-dev]
+libgazebo5-dev:
+  arch: [gazebo]
+  fedora: [gazebo-devel]
+  gentoo: [sci-electronics/gazebo]
+  ubuntu: [libgazebo5-dev]
+libgeos++-dev:
+  ubuntu: [libgeos++-dev]
 libgflags-dev:
   fedora: [gflags-devel]
   gentoo:
@@ -948,6 +1372,10 @@ libglew-dev:
     precise: [libglew1.6-dev]
     quantal: [libglew-dev]
     raring: [libglew-dev]
+    saucy: [libglew-dev]
+    trusty: [libglew-dev]
+    utopic: [libglew-dev]
+    vivid: [libglew-dev]
 libglib-dev:
   arch: [glib2]
   debian: [libglib2.0-dev]
@@ -956,6 +1384,11 @@ libglib-dev:
     portage:
       packages: [dev-libs/glib]
   ubuntu: [libglib2.0-dev]
+libglm-dev:
+  arch: [glm]
+  debian: [libglm-dev]
+  fedora: [glm]
+  ubuntu: [libglm-dev]
 libglui-dev:
   arch: [glui]
   debian: [libglui-dev]
@@ -969,6 +1402,9 @@ libglw1-mesa:
     portage:
       packages: [x11-libs/libGLw]
   ubuntu: [libglw1-mesa]
+libgmp:
+  fedora: [gmp-devel]
+  ubuntu: [libgmp-dev]
 libgoogle-glog-dev:
   fedora: [glog-devel]
   gentoo:
@@ -982,7 +1418,14 @@ libgphoto-dev:
   gentoo:
     portage:
       packages: [media-gfx/gphoto2]
-  ubuntu: [libgphoto2-2-dev]
+  ubuntu:
+    lucid: [libgphoto2-dev]
+    precise: [libgphoto2-2-dev]
+    raring: [libgphoto2-2-dev]
+    saucy: [libgphoto2-6-dev]
+    trusty: [libgphoto2-dev]
+    utopic: [libgphoto2-dev]
+    vivid: [libgphoto2-dev]
 libgps:
   arch: [gpsd]
   debian: [libgps-dev]
@@ -990,6 +1433,7 @@ libgps:
   gentoo:
     portage:
       packages: [sci-geosciences/gpsd]
+  opensuse: [gpsd-devel]
   ubuntu: [libgps-dev]
 libgsl:
   arch: [gsl]
@@ -998,6 +1442,7 @@ libgsl:
   gentoo:
     portage:
       packages: [sci-libs/gsl]
+  macports: [gsl]
   ubuntu: [libgsl0-dev]
 libgstreamer-plugins-base0.10-0:
   arch: [gstreamer0.10-base-plugins]
@@ -1009,6 +1454,12 @@ libgstreamer-plugins-base0.10-dev:
   debian: [libgstreamer-plugins-base0.10-dev]
   fedora: [gstreamer-plugins-base-devel]
   ubuntu: [libgstreamer-plugins-base0.10-dev]
+libgstreamer-plugins-base1.0-0:
+  debian: [libgstreamer-plugins-base1.0-0]
+  ubuntu: [libgstreamer-plugins-base1.0-0]
+libgstreamer-plugins-base1.0-dev:
+  debian: [libgstreamer-plugins-base1.0-dev]
+  ubuntu: [libgstreamer-plugins-base1.0-dev]
 libgstreamer0.10-0:
   arch: [gstreamer0.10]
   debian: [libgstreamer0.10-0]
@@ -1019,6 +1470,12 @@ libgstreamer0.10-dev:
   debian: [libgstreamer0.10-dev]
   fedora: [gstreamer-devel]
   ubuntu: [libgstreamer0.10-dev]
+libgstreamer1.0-0:
+  debian: [libgstreamer1.0-0]
+  ubuntu: [libgstreamer1.0-0]
+libgstreamer1.0-dev:
+  debian: [libgstreamer1.0-dev]
+  ubuntu: [libgstreamer1.0-dev]
 libgtkmm:
   arch: [gtkmm]
   debian: [libgtkmm-dev]
@@ -1042,10 +1499,12 @@ libhal-dev:
   debian:
     apt:
       packages: [libhal-dev]
-  fedora: [hal-devel]
   ubuntu:
     apt:
       packages: [libhal-dev]
+libicu-dev:
+  fedora: [libicu-devel]
+  ubuntu: [libicu-dev]
 libirrlicht-dev:
   arch: [irrlicht]
   debian: [libirrlicht-dev]
@@ -1054,6 +1513,13 @@ libirrlicht-dev:
     portage:
       packages: [dev-games/irrlicht]
   ubuntu: [libirrlicht-dev]
+libiw-dev:
+  debian: [libiw-dev]
+  fedora: [wireless-tools-devel]
+  gentoo:
+    portage:
+      packages: [net-wireless/wireless-tools]
+  ubuntu: [libiw-dev]
 libjackson-json-java:
   fedora: [jackson]
   gentoo:
@@ -1064,8 +1530,9 @@ libjpeg:
   arch: [libjpeg-turbo]
   debian: [libjpeg8-dev]
   fedora: [libjpeg-turbo-devel]
-  gentoo: [libjpeg-turbo]
+  gentoo: [media-libs/libjpeg-turbo]
   macports: [jpeg]
+  opensuse: [libjpeg62-devel]
   ubuntu:
     lucid: [libjpeg62-dev]
     maverick: [libjpeg62-dev]
@@ -1074,6 +1541,11 @@ libjpeg:
     precise: [libjpeg-dev]
     quantal: [libjpeg-dev]
     raring: [libjpeg-dev]
+    saucy: [libjpeg-dev]
+    trusty: [libjpeg-dev]
+    trusty_python3: [libjpeg-dev]
+    utopic: [libjpeg-dev]
+    vivid: [libjpeg-dev]
 libjson-glib:
   arch: [json-glib]
   debian: [libjson-glib-dev]
@@ -1084,6 +1556,7 @@ libjson-glib:
   ubuntu: [libjson-glib-dev]
 libjson-java:
   debian: [libjson-java]
+  fedora: [json-lib]
   gentoo:
     portage:
       packages: [dev-java/json-simple]
@@ -1096,6 +1569,17 @@ libjson0-dev:
     portage:
       packages: [dev-libs/json-c]
   ubuntu: [libjson0-dev]
+libjsoncpp-dev:
+  arch: [jsoncpp]
+  debian: [libjsoncpp-dev]
+  fedora: [jsoncpp-devel]
+  gentoo:
+    portage:
+      packages: [dev-libs/jsoncpp]
+  ubuntu: [libjsoncpp-dev]
+libkdtree++-dev:
+  fedora: [libkdtree++-devel]
+  ubuntu: [libkdtree++-dev]
 liblapack-dev:
   arch: [lapack]
   debian: [liblapack-dev]
@@ -1112,10 +1596,13 @@ libleptonica-dev:
     portage:
       packages: [media-libs/leptonica]
   ubuntu: [libleptonica-dev]
+liblinear-dev:
+  fedora: [liblinear-devel]
+  ubuntu: [liblinear-dev]
 libmagick:
   arch: [imagemagick]
   debian: [libmagick++-dev]
-  fedora: [ImageMagick-c++]
+  fedora: [ImageMagick-c++-devel]
   ubuntu: [libmagick++-dev]
 libmarble-dev:
   arch: [kdeedu-marble]
@@ -1125,6 +1612,12 @@ libmarble-dev:
     portage:
       packages: [kde-base/marble]
   ubuntu: [libmarble-dev]
+libmicrohttpd:
+  fedora: [libmicrohttpd-devel]
+  ubuntu: [libmicrohttpd-dev]
+libmodbus-dev:
+  fedora: [libmodbus-devel]
+  ubuntu: [libmodbus-dev]
 libmotif-dev:
   arch: [lesstif]
   debian: [libmotif-dev]
@@ -1141,13 +1634,27 @@ libmp3lame-dev:
     portage:
       packages: [media-sound/lame]
   ubuntu: [libmp3lame-dev]
+libmpich-dev:
+  debian: [libmpich-dev]
+  ubuntu: [libmpich-dev]
+libmpich2-dev:
+  debian: [libmpich2-dev]
+  ubuntu: [libmpich2-dev]
 libmysqlclient-dev:
   arch: [mariadb]
   debian: [libmysqlclient-dev]
-  fedora: [mysql]
+  fedora:
+    '21': [mariadb-devel]
+    '22': [mariadb-devel]
+    beefy: [mysql-devel]
+    heisenbug: [mariadb-devel]
+    schrödinger’s: [mariadb-devel]
+    spherical: [mysql-devel]
   gentoo:
     portage:
       packages: [dev-db/mariadb]
+  macports: [mysql5]
+  opensuse: [libmysqlclient-devel]
   ubuntu: [libmysqlclient-dev]
 libncurses-dev:
   arch: [ncurses]
@@ -1156,6 +1663,7 @@ libncurses-dev:
   gentoo:
     portage:
       packages: [sys-libs/ncurses]
+  macports: [ncurses]
   ubuntu: [libncurses5-dev]
 libnl-3:
   arch: [libnl]
@@ -1163,14 +1671,14 @@ libnl-3:
   gentoo:
     portage:
       packages: [dev-libs/libnl]
-  ubuntu: [libnl-3-200]
+  ubuntu: [libnl-3-200, libnl-genl-3-200]
 libnl-3-dev:
   arch: [libnl]
   fedora: [libnl3-devel]
   gentoo:
     portage:
       packages: [dev-libs/libnl]
-  ubuntu: [libnl-3-dev]
+  ubuntu: [libnl-3-dev, libnl-genl-3-dev]
 libnl-dev:
   arch: [libnl1]
   debian: [libnl-dev]
@@ -1179,22 +1687,44 @@ libnl-dev:
     portage:
       packages: [dev-libs/libnl]
   ubuntu: [libnl-dev]
+libnlopt-dev:
+  ubuntu: [libnlopt-dev]
+libnlopt0:
+  ubuntu: [libnlopt0]
+libnss3-dev:
+  fedora: [nss-devel]
+  ubuntu: [libnss3-dev]
 libogg:
   arch: [libogg]
   debian: [libogg-dev]
   fedora: [libogg-devel]
   gentoo: [media-libs/libogg]
   macports: [libogg]
+  opensuse: [libogg-devel]
   ubuntu: [libogg-dev]
 libogre-dev:
   arch: [ogre]
-  debian: [libogre-dev]
+  debian:
+    jessie: [libogre-1.9-dev]
+    sid: [libogre-1.9-dev]
+    wheezy: [libogre-dev]
   fedora: [ogre-devel]
   gentoo: [dev-games/ogre]
   macports: [ogre]
   opensuse: [ogre-devel]
   rhel: [ogre-devel]
-  ubuntu: [libogre-dev]
+  ubuntu:
+    lucid: [libogre-dev]
+    maverick: [libogre-dev]
+    natty: [libogre-dev]
+    oneiric: [libogre-dev]
+    precise: [libogre-dev]
+    quantal: [libogre-dev]
+    raring: [libogre-dev]
+    saucy: [libogre-1.8-dev]
+    trusty: [libogre-1.8-dev]
+    utopic: [libogre-1.9-dev]
+    vivid: [libogre-1.9-dev]
 libois-dev:
   arch: [ois]
   debian: [libois-dev]
@@ -1203,6 +1733,17 @@ libois-dev:
     portage:
       packages: [dev-games/ois]
   ubuntu: [libois-dev]
+libopencv-dev:
+  arch: [opencv]
+  debian: [libopencv-dev]
+  fedora: [opencv-devel]
+  gentoo: [media-libs/opencv]
+  macports: [opencv]
+  ubuntu:
+    saucy: [libopencv-dev]
+    trusty: [libopencv-dev]
+    utopic: [libopencv-dev]
+    vivid: [libopencv-dev]
 libopenni-dev:
   arch: [openni]
   debian: [libopenni-dev]
@@ -1212,7 +1753,13 @@ libopenni-nite-dev:
   arch: [primesense-nite]
   debian: [libopenni-nite-dev]
   fedora: [openni-nite-devel]
-  ubuntu: [libopenni-nite-dev]
+  ubuntu:
+    lucid: [libopenni-nite-dev]
+    maverick: [libopenni-nite-dev]
+    natty: [libopenni-nite-dev]
+    oneiric: [libopenni-nite-dev]
+    precise: [libopenni-nite-dev]
+    quantal: [libopenni-nite-dev]
 libopenni-sensor-primesense-dev:
   arch: [sensorkinect]
   debian: [libopenni-sensor-primesense-dev]
@@ -1225,19 +1772,11 @@ libopenni2-dev:
 libopenscenegraph:
   arch: [openscenegraph]
   debian: [openscenegraph, libopenscenegraph-dev, libopenscenegraph80, libopenthreads-dev, libopenthreads14]
-  fedora: [OpenSceneGraph]
+  fedora: [OpenSceneGraph, OpenSceneGraph-devel, OpenThreads, OpenThreads-devel]
   gentoo:
     portage:
       packages: [dev-games/openscenegraph]
-  ubuntu:
-    karmic: [openscenegraph, libopenscenegraph-dev, libopenscenegraph56, libopenthreads-dev, libopenthreads12]
-    lucid: [openscenegraph, libopenscenegraph-dev, libopenscenegraph56, libopenthreads-dev, libopenthreads12]
-    maverick: [openscenegraph, libopenscenegraph-dev, libopenscenegraph65, libopenthreads-dev, libopenthreads13]
-    natty: [openscenegraph, libopenscenegraph-dev, libopenscenegraph65, libopenthreads-dev, libopenthreads13]
-    oneiric: [openscenegraph, libopenscenegraph-dev, libopenscenegraph80, libopenthreads-dev, libopenthreads14]
-    precise: [openscenegraph, libopenscenegraph-dev, libopenscenegraph80, libopenthreads-dev, libopenthreads14]
-    quantal: [openscenegraph, libopenscenegraph-dev, libopenscenegraph80, libopenthreads-dev, libopenthreads14]
-    raring: [openscenegraph, libopenscenegraph-dev, libopenscenegraph80, libopenthreads-dev, libopenthreads14]
+  ubuntu: [openscenegraph, libopenscenegraph-dev]
 libosmesa6-dev:
   arch: [mesa]
   debian: [libosmesa6-dev]
@@ -1261,6 +1800,38 @@ libpcap:
   ubuntu:
     apt:
       packages: [libpcap0.8-dev]
+libpcl-all:
+  arch: [pcl]
+  fedora: [pcl, pcl-tools]
+  gentoo:
+    portage:
+      packages: [sci-libs/pcl]
+  macports: [libpcl]
+  opensuse: [pcl]
+  ubuntu:
+    precise: [libpcl-1.7-all]
+    quantal: [libpcl-1.7-all]
+    raring: [libpcl-1.7-all]
+    saucy: [libpcl-1.7-all]
+    trusty: [libpcl-1.7-all]
+    utopic: [libpcl1.7]
+    vivid: [libpcl1.7]
+libpcl-all-dev:
+  arch: [pcl]
+  fedora: [pcl-devel]
+  gentoo:
+    portage:
+      packages: [sci-libs/pcl]
+  macports: [libpcl]
+  opensuse: [pcl]
+  ubuntu:
+    precise: [libpcl-1.7-all-dev]
+    quantal: [libpcl-1.7-all-dev]
+    raring: [libpcl-1.7-all-dev]
+    saucy: [libpcl-1.7-all-dev]
+    trusty: [libpcl-1.7-all-dev]
+    utopic: [libpcl-dev]
+    vivid: [libpcl-dev]
 libpcsclite-dev:
   arch: [pcsclite]
   debian: [libpcsclite-dev]
@@ -1269,6 +1840,18 @@ libpcsclite-dev:
     portage:
       packages: [sys-apps/pcsc-lite]
   ubuntu: [libpcsclite-dev]
+libphonon:
+  debian: [libphonon4]
+  fedora: [phonon]
+  ubuntu:
+    apt:
+      packages: [libphonon4]
+libphonon-dev:
+  debian: [libphonon-dev]
+  fedora: [phonon-devel]
+  ubuntu:
+    apt:
+      packages: [libphonon-dev]
 libpng12-dev:
   arch: [libpng]
   debian: [libpng12-dev]
@@ -1276,6 +1859,8 @@ libpng12-dev:
   gentoo:
     portage:
       packages: [media-libs/libpng]
+  macports: [libpng]
+  opensuse: [libpng12-devel]
   ubuntu: [libpng12-dev]
 libpoco-dev:
   arch: [poco]
@@ -1284,6 +1869,7 @@ libpoco-dev:
   gentoo:
     portage:
       packages: [dev-libs/poco]
+  macports: [poco]
   ubuntu: [libpoco-dev]
 libpocofoundation9:
   debian: [libpocofoundation9]
@@ -1300,27 +1886,99 @@ libpopt-dev:
 libpq-dev:
   arch: [postgresql-libs]
   debian: [libpq-dev]
-  fedora: [derelict-pq-devel]
+  fedora:
+    '21': [derelict-PQ-devel, postgresql-devel]
+    '22': [derelict-PQ-devel, postgresql-devel]
+    beefy: [derelict-postgresql-devel, postgresql-devel]
+    heisenbug: [derelict-postgresql-devel, postgresql-devel]
+    schrödinger’s: [derelict-postgresql-devel, postgresql-devel]
+    spherical: [derelict-postgresql-devel, postgresql-devel]
   gentoo:
     portage:
       packages: [dev-libs/libpqxx]
   ubuntu: [libpq-dev]
+libpqxx:
+  fedora: [libpqxx]
+  ubuntu:
+    lucid: [libpqxx-3.0]
+    maverick: [libpqxx-3.0]
+    natty: [libpqxx-3.0]
+    oneiric: [libpqxx-3.0]
+    precise: [libpqxx-3.1]
+    quantal: [libpqxx-3.1]
+    raring: [libpqxx-3.1]
+    saucy: [libpqxx-3.1]
+    trusty: [libpqxx-4.0]
+    utopic: [libpqxx-4.0]
+    vivid: [libpqxx-4.0]
+libpqxx-dev:
+  fedora: [libpqxx-devel]
+  ubuntu:
+    lucid: [libpqxx3-dev]
+    maverick: [libpqxx3-dev]
+    natty: [libpqxx3-dev]
+    oneiric: [libpqxx3-dev]
+    precise: [libpqxx3-dev]
+    quantal: [libpqxx3-dev]
+    raring: [libpqxx3-dev]
+    saucy: [libpqxx3-dev]
+    trusty: [libpqxx-dev]
+    utopic: [libpqxx-dev]
+    vivid: [libpqxx-dev]
+libpulse-dev:
+  fedora: [pulseaudio-libs-devel]
+  ubuntu: [libpulse-dev]
+libqcustomplot-dev:
+  fedroa: [qcustomplot-devel]
+  ubuntu: [libqcustomplot-dev]
+libqd-dev:
+  debian: [libqd-dev]
+  fedora: [qd-devel]
+  gentoo:
+    portage:
+      packages: [sci-libs/qd]
+  macports: [qd]
+  ubuntu: [libqd-dev]
 libqglviewer-qt4:
-  arch: [libqglviewer]
+  arch: [libqglviewer-qt4]
   debian: [libqglviewer-qt4-2]
   fedora: [libQGLViewer]
-  ubuntu: [libqglviewer-qt4-2]
+  macports: [libQGLViewer]
+  ubuntu:
+    lucid: [libqglviewer-qt4-2]
+    maverick: [libqglviewer-qt4-2]
+    natty: [libqglviewer-qt4-2]
+    oneiric: [libqglviewer-qt4-2]
+    precise: [libqglviewer-qt4-2]
+    quantal: [libqglviewer-qt4-2]
+    raring: [libqglviewer-qt4-2]
+    saucy: [libqglviewer2]
+    trusty: [libqglviewer2]
+    utopic: [libqglviewer2]
+    vivid: [libqglviewer2]
 libqglviewer-qt4-dev:
-  arch: [libqglviewer]
+  arch: [libqglviewer-qt4]
   debian: [libqglviewer-qt4-dev]
   fedora: [libQGLViewer-devel]
-  ubuntu: [libqglviewer-qt4-dev]
+  ubuntu:
+    lucid: [libqglviewer-qt4-dev]
+    maverick: [libqglviewer-qt4-dev]
+    natty: [libqglviewer-qt4-dev]
+    oneiric: [libqglviewer-qt4-dev]
+    precise: [libqglviewer-qt4-dev]
+    quantal: [libqglviewer-qt4-dev]
+    raring: [libqglviewer-qt4-dev]
+    saucy: [libqglviewer-dev]
+    trusty: [libqglviewer-dev]
+    utopic: [libqglviewer-dev]
+    vivid: [libqglviewer-dev]
 libqhull:
   arch: [qhull]
   debian: [libqhull-dev]
   fedora: [qhull-devel]
   gentoo: [media-libs/qhull]
   macports: [qhull]
+  opensuse: [qhull-devel]
   ubuntu: [libqhull-dev]
 libqt4:
   arch: [qt4]
@@ -1362,15 +2020,31 @@ libqt4-opengl-dev:
   gentoo:
     portage:
       packages: [dev-qt/qtopengl]
+  macports: [qt4-mac]
+  opensuse: [libqt4-devel]
   rhel: [qt-devel]
   ubuntu: [libqt4-opengl-dev]
 libqt4-sql-psql:
   arch: [qt4]
   debian: [libqt4-sql-psql]
+  fedora: [qt-postgresql]
   gentoo:
     portage:
       packages: [dev-qt/qtsql]
+  macports: [qt4-mac]
   ubuntu: [libqt4-sql-psql]
+libqt5-core:
+  fedora: [qt5-qtbase]
+  ubuntu: [libqt5core5a]
+libqt5-gui:
+  fedora: [qt5-qtbase-gui]
+  ubuntu: [libqt5gui5]
+libqt5-network:
+  fedora: [qt5-qtbase]
+  ubuntu: [libqt5network5]
+libqt5-sql:
+  fedora: [qt5-qtbase]
+  ubuntu: [libqt5sql5]
 libqtgui4:
   arch: [qt4]
   debian: [libqtgui4]
@@ -1379,6 +2053,9 @@ libqtgui4:
     portage:
       packages: [dev-qt/qtgui]
   ubuntu: [libqtgui4]
+libqtwebkit-dev:
+  fedora: [qtwebkit-devel]
+  ubuntu: [libqtwebkit-dev]
 libqwt5-qt4-dev:
   arch: [qwt5]
   debian:
@@ -1391,6 +2068,14 @@ libqwt5-qt4-dev:
   ubuntu:
     apt:
       packages: [libqwt5-qt4-dev]
+libqwt6:
+  fedora: [qwt-devel]
+  ubuntu:
+    precise: [libqwt-dev]
+    quantal: [libqwt-dev]
+    raring: [libqwt-dev]
+    saucy: [libqwt-dev]
+    trusty: [libqwt-dev]
 libqwtplot3d-qt4-dev:
   arch: [qwtplot3d]
   debian:
@@ -1424,14 +2109,16 @@ libreadline:
   gentoo:
     portage:
       packages: [sys-libs/readline]
+  macports: [readline]
   ubuntu: [libreadline-dev]
 libreadline-dev:
   arch: [readline]
   debian: [libreadline-dev]
-  fedora: [readline]
+  fedora: [readline-devel]
   gentoo:
     portage:
       packages: [sys-libs/readline]
+  macports: [readline]
   ubuntu: [libreadline-dev]
 libreadline-java:
   arch: [java-readline]
@@ -1441,6 +2128,11 @@ libreadline-java:
     portage:
       packages: [dev-java/libreadline-java]
   ubuntu: [libreadline-java]
+libsensors4-dev:
+  arch: [lm_sensors]
+  debian: [libsensors4-dev]
+  fedora: [lm_sensors-devel]
+  ubuntu: [libsensors4-dev]
 libsimage-dev:
   arch: [simage]
   debian: [libsimage-dev]
@@ -1448,6 +2140,9 @@ libsimage-dev:
     portage:
       packages: [media-libs/simage]
   ubuntu: [libsimage-dev]
+libsndfile1-dev:
+  fedora: [libsndfile-devel]
+  ubuntu: [libsndfile1-dev]
 libsoqt4-dev:
   arch: [soqt]
   debian: [libsoqt4-dev]
@@ -1472,6 +2167,15 @@ libsqlite3-dev:
     portage:
       packages: [dev-db/sqlite]
   ubuntu: [libsqlite3-dev]
+libsrtp0-dev:
+  fedora: [libsrtp-devel]
+  ubuntu: [libsrtp0-dev]
+libssh2:
+  fedora: [libssh2]
+  ubuntu: [libssh2-1]
+libssh2-dev:
+  fedora: [libssh2-devel]
+  ubuntu: [libssh2-1-dev]
 libssl-dev:
   arch: [openssl]
   debian: [libssl-dev]
@@ -1490,29 +2194,40 @@ libstdc++5:
       packages: [virtual/libstdc++]
   opensuse: [libstdc++33]
   ubuntu: [libstdc++5]
+libsvn-dev:
+  fedora: [subversion-devel]
+  ubuntu: [libsvn-dev]
 libswscale-dev:
   arch: [ffmpeg]
   debian: [libswscale-dev]
+  fedora: [ffmpeg-devel]
   gentoo:
     portage:
       packages: [media-video/ffmpeg]
   ubuntu: [libswscale-dev]
+libtesseract:
+  fedora: [tesseract-devel]
+  ubuntu: [libtesseract-dev]
 libtheora:
   arch: [libtheora]
   debian: [libtheora-dev]
   fedora: [libtheora-devel]
   gentoo: [media-libs/libtheora]
   macports: [libtheora]
+  opensuse: [libtheora-devel]
   ubuntu: [libtheora-dev]
 libtiff-dev:
   arch: [libtiff]
   debian:
-    sid: [libtiff4-dev]
-    wheezy: [libtiff5-dev]
+    jessie: [libtiff5-dev]
+    sid: [libtiff5-dev]
+    wheezy: [libtiff5-alt-dev]
   fedora: [libtiff]
   gentoo:
     portage:
       packages: [media-libs/tiff]
+  macports: [tiff]
+  opensuse: [libtiff-devel]
   ubuntu:
     lucid: [libtiff4-dev]
     maverick: [libtiff4-dev]
@@ -1521,6 +2236,11 @@ libtiff-dev:
     precise: [libtiff4-dev]
     quantal: [libtiff5-dev]
     raring: [libtiff5-dev]
+    saucy: [libtiff5-dev]
+    trusty: [libtiff5-dev]
+    trusty_python3: [libtiff5-dev]
+    utopic: [libtiff5-dev]
+    vivid: [libtiff5-dev]
 libtiff4-dev:
   arch: [libtiff]
   debian: [libtiff4-dev]
@@ -1528,10 +2248,12 @@ libtiff4-dev:
   gentoo:
     portage:
       packages: [media-libs/tiff]
+  macports: [tiff]
   ubuntu: [libtiff4-dev]
 libtool:
   arch: [libtool]
   debian:
+    jessie: [libtool, libltdl-dev]
     lenny: [libtool, libltdl3-dev]
     sid: [libtool, libltdl-dev]
     squeeze: [libtool, libltdl-dev]
@@ -1543,8 +2265,20 @@ libtool:
   opensuse: [libtool, libltdl3]
   rhel: [libtool, libtool-ltdl-devel]
   ubuntu:
-    apt:
-      packages: [libtool, libltdl-dev]
+    lucid: [libtool, libltdl-dev]
+    maverick: [libtool, libltdl-dev]
+    natty: [libtool, libltdl-dev]
+    oneiric: [libtool, libltdl-dev]
+    precise: [libtool, libltdl-dev]
+    quantal: [libtool, libltdl-dev]
+    raring: [libtool, libltdl-dev]
+    saucy: [libtool, libltdl-dev]
+    trusty: [libtool, libltdl-dev]
+    utopic: [libtool, libltdl-dev, libtool-bin]
+    vivid: [libtool, libltdl-dev, libtool-bin]
+libturbojpeg:
+  fedora: [turbojpeg-devel]
+  ubuntu: [libturbojpeg]
 libudev-dev:
   arch: [systemd]
   debian: [libudev-dev]
@@ -1562,29 +2296,109 @@ libunittest++:
   ubuntu:
     apt:
       packages: [libunittest++-dev]
+libunwind:
+  fedora: [libunwind]
+  ubuntu:
+    precise: [libunwind7]
+    quantal: [libunwind8]
+    raring: [libunwind8]
+    saucy: [libunwind8]
+    trusty: [libunwind8]
+libunwind-dev:
+  fedora: [libunwind-devel]
+  ubuntu:
+    precise: [libunwind7-dev]
+    quantal: [libunwind8-dev]
+    raring: [libunwind8-dev]
+    saucy: [libunwind8-dev]
+    trusty: [libunwind8-dev]
+liburdfdom-dev:
+  arch: [urdfdom]
+  debian: [liburdfdom-dev]
+  fedora: [urdfdom-devel]
+  gentoo: [dev-libs/urdfdom]
+  ubuntu:
+    saucy: [liburdfdom-dev]
+    trusty: [liburdfdom-dev]
+    utopic: [liburdfdom-dev]
+    vivid: [liburdfdom-dev]
+liburdfdom-headers-dev:
+  arch: [urdfdom-headers]
+  debian: [liburdfdom-headers-dev]
+  fedora: [urdfdom-headers-devel]
+  gentoo: [dev-libs/urdfdom_headers]
+  ubuntu:
+    saucy: [liburdfdom-headers-dev]
+    trusty: [liburdfdom-headers-dev]
+    utopic: [liburdfdom-headers-dev]
+    vivid: [liburdfdom-headers-dev]
+liburdfdom-tools:
+  debian: [liburdfdom-tools]
+  fedora: [urdfdom]
+  ubuntu: [liburdfdom-tools]
+libusb:
+  arch: [libusb-compat]
+  debian: [libusb-0.1-4]
+  fedora: [libusb]
+  gentoo: [dev-libs/libusb-compat]
+  macports: [libusb]
+  ubuntu: [libusb-0.1-4]
+libusb-1.0:
+  arch: [libusbx]
+  debian: [libusb-1.0-0]
+  fedora:
+    '21': [libusbx]
+    '22': [libusbx]
+    beefy: [libusb1]
+    heisenbug: [libusbx]
+    schrödinger’s: [libusbx]
+    spherical: [libusbx]
+  gentoo: [=dev-libs/libusb-1.0*]
+  opensuse: [libusb-1_0-0]
+  ubuntu: [libusb-1.0-0]
 libusb-1.0-dev:
   arch: [libusbx]
   debian: [libusb-1.0-0-dev]
   fedora:
+    '21': [libusbx-devel]
+    '22': [libusbx-devel]
     beefy: [libusb1-devel]
+    heisenbug: [libusbx-devel]
+    schrödinger’s: [libusbx-devel]
     spherical: [libusbx-devel]
+  gentoo: [=dev-libs/libusb-1.0*]
+  macports: [libusb]
+  opensuse: [libusb-1_0-devel]
   ubuntu: [libusb-1.0-0-dev]
 libusb-dev:
   arch: [libusb-compat]
   debian: [libusb-dev]
   fedora: [libusb-devel]
+  macports: [libusb]
   ubuntu: [libusb-dev]
+libuv-dev:
+  fedora: [libuv-devel]
+  ubuntu: [libuv-dev]
 libv4l-dev:
   arch: [v4l-utils]
   debian: [libv4l-dev]
   fedora: [libv4l-devel]
+  gentoo: [media-libs/libv4l]
+  opensuse: [libv4l-devel]
   ubuntu: [libv4l-dev]
+libvlc:
+  fedora: [vlc-core]
+  ubuntu: [libvlc5, vlc-nox]
+libvpx-dev:
+  fedora: [libvpx-devel]
+  ubuntu: [libvpx-dev]
 libvtk:
   arch: [vtk]
   debian: [libvtk5-dev]
   fedora: [vtk-devel]
   gentoo: [sci-libs/vtk]
   macports: [vtk-devel]
+  opensuse: [vtk-devel]
   ubuntu:
     lucid: [libvtk5-dev]
     maverick: [libvtk5-dev]
@@ -1593,6 +2407,24 @@ libvtk:
     precise: [libvtk5-dev]
     quantal: [libvtk5-dev]
     raring: [libvtk5-dev]
+    saucy: [libvtk5-dev]
+    trusty: [libvtk5-dev]
+    utopic: [libvtk5-dev]
+    vivid: [libvtk5-dev]
+libvtk-java:
+  arch: [vtk]
+  debian: [libvtk-java]
+  fedora: [vtk-java]
+  gentoo: [sci-libs/vtk]
+  ubuntu:
+    lucid: [libvtk-java]
+    precise: [libvtk-java]
+    quantal: [libvtk-java]
+    raring: [libvtk-java]
+    saucy: [libvtk-java]
+    trusty: [libvtk-java]
+    utopic: [libvtk-java]
+    vivid: [libvtk-java]
 libvtk-qt:
   arch: [vtk]
   debian: [libvtk5-qt4-dev]
@@ -1602,7 +2434,7 @@ libx11:
   arch: [libx11]
   debian: [libx11-dev]
   fedora: [libX11]
-  gentoo: [libX11]
+  gentoo: [x11-libs/libX11]
   macports: [xorg-libX11]
   ubuntu: [libx11-dev]
 libx11-dev:
@@ -1611,6 +2443,16 @@ libx11-dev:
   fedora: [libX11-devel]
   gentoo: [x11-libs/libX11]
   ubuntu: [libx11-dev]
+libx264-dev:
+  debian: [libx264-dev]
+  fedora: [x264-devel]
+  ubuntu: [libx264-dev]
+libx52pro:
+  debian: [libx52pro0]
+  ubuntu: [libx52pro0]
+libx52pro-dev:
+  debian: [libx52pro-dev]
+  ubuntu: [libx52pro-dev]
 libxaw:
   arch: [libxaw]
   debian: [libxaw7-dev]
@@ -1640,11 +2482,13 @@ libxi-dev:
   fedora: [libXi-devel]
   ubuntu: [libxi-dev]
 libxinerama-dev:
+  arch: [libxinerama]
+  fedora: [libXinerama-devel]
   ubuntu: [libxinerama-dev]
 libxml++-2.6:
   arch: [libxml++]
   debian: [libxml++2.6-2, libxml++2.6-dev]
-  fedora: [libxml++]
+  fedora: [libxml++, libxml++-devel]
   ubuntu: [libxml++2.6-2, libxml++2.6-dev]
 libxml2:
   arch: [libxml2]
@@ -1673,6 +2517,7 @@ libxslt:
   arch: [libxslt]
   debian: [libxslt1-dev]
   fedora: [libxslt-devel]
+  macports: [libxslt]
   ubuntu: [libxslt1-dev]
 libxt-dev:
   arch: [libxt]
@@ -1694,40 +2539,72 @@ libxxf86vm:
   opensuse: [xorg-x11-devel]
   rhel: [libXxf86vm-devel]
   ubuntu: [libxxf86vm-dev]
+libzmq3-dev:
+  ubuntu: [libzmq3-dev]
+libzmqpp3:
+  ubuntu: [libzmqpp3]
 linux-headers-generic:
   arch: [linux-headers]
   debian: [linux-headers-generic]
+  fedora: [kernel-headers]
   ubuntu: [linux-headers-generic]
 log4cxx:
   arch: [log4cxx]
   cygwin: [liblog4cxx-devel]
   debian:
+    jessie: [liblog4cxx10-dev]
     sid: [liblog4cxx10-dev]
     squeeze: [liblog4cxx10-dev]
     wheezy: [liblog4cxx10-dev]
   fedora: [log4cxx-devel]
   freebsd: [log4cxx]
   gentoo: [dev-libs/log4cxx]
-  macports: [log4cxx]
-  opensuse: [log4cxx-devel]
+  macports: [ros-log4cxx]
+  opensuse: [liblog4cxx-devel]
   rhel: [log4cxx-devel]
   ubuntu: [liblog4cxx10-dev]
 lua-dev:
   arch: [lua]
   debian: [liblua5.1-0-dev]
-  fedora: [lua-devel]
+  fedora:
+    '21': [compat-lua-devel]
+    '22': [compat-lua-devel]
+    beefy: [lua-devel]
+    heisenbug: [compat-lua-devel]
+    schrödinger’s: [lua-devel]
+    spherical: [lua-devel]
+  macports: [lua51]
   ubuntu: [liblua5.1-0-dev]
+lz4:
+  arch: [lz4]
+  debian: [liblz4-dev]
+  fedora: [lz4-devel]
+  gentoo: [app-arch/lz4]
+  ubuntu:
+    saucy: [liblz4-dev]
+    trusty: [liblz4-dev]
+    utopic: [liblz4-dev]
+    vivid: [liblz4-dev]
 m4:
   arch: [m4]
   debian: [m4]
   fedora: [m4]
   opensuse: [m4]
   ubuntu: [m4]
+mapnik-utils:
+  fedora: [mapnik-utils]
+  ubuntu: [mapnik-utils]
 maven:
   arch: [maven]
   debian: [maven]
   fedora: [maven]
   ubuntu: [maven]
+mayavi:
+  fedora: [Mayavi]
+  ubuntu: [mayavi2]
+meld:
+  fedora: [meld]
+  ubuntu: [meld]
 mercurial:
   arch: [mercurial]
   debian: [mercurial]
@@ -1738,27 +2615,94 @@ mercurial:
   opensuse: [mercurial]
   ubuntu: [mercurial]
 mesa-common-dev:
+  arch: [mesa]
+  fedora: [mesa-libGL-devel, libdrm-devel, libX11-devel]
   ubuntu: [mesa-common-dev]
+meshlab:
+  fedora: [meshlab]
+  ubuntu: [meshlab]
+mongodb:
+  debian: [mongodb]
+  fedora: [mongodb]
+  ubuntu: [mongodb]
 mongodb-dev:
   arch: [mongodb]
   debian: [libmongo-client-dev, mongodb-dev]
   fedora: [libmongo-client-devel, mongodb-devel]
-  ubuntu: [libmongo-client-dev, mongodb-dev]
+  macports: [mongodb]
+  ubuntu:
+    lucid: [libmongo-client-dev, mongodb-dev]
+    maverick: [libmongo-client-dev, mongodb-dev]
+    natty: [libmongo-client-dev, mongodb-dev]
+    oneiric: [libmongo-client-dev, mongodb-dev]
+    precise: [libmongo-client-dev, mongodb-dev]
+    quantal: [libmongo-client-dev, mongodb-dev]
+    raring: [libmongo-client-dev, mongodb-dev]
+    saucy: [libmongo-client-dev, mongodb-dev]
+    trusty: [libmongo-client-dev, mongodb-dev]
+    utopic: [libmongo-client-dev]
+    vivid: [libmongo-client-dev]
+mono-devel:
+  debian: [mono-devel]
+  fedora: [mono-devel]
+  ubuntu: [mono-devel]
 mpg123:
   arch: [mpg123]
   debian: [mpg123]
   fedora: [mpg123-devel]
   ubuntu: [mpg123]
+mplayer:
+  arch: [mplayer]
+  debian:
+    jessie: [mplayer]
+    sid: [mplayer]
+    squeeze: [mplayer]
+    wheezy: [mplayer]
+  fedora: [mplayer]
+  ubuntu: [mplayer]
+mrpt:
+  debian: [libmrpt-dev]
+  fedora: [mrpt-devel]
+  ubuntu:
+    oneiric: [libmrpt-dev]
+    precise: [libmrpt-dev]
+    quantal: [libmrpt-dev]
+    raring: [libmrpt-dev, mrpt-apps]
+    saucy: [libmrpt-dev, mrpt-apps]
+    trusty: [libmrpt-dev]
+    utopic: [libmrpt-dev]
+    vivid: [libmrpt-dev]
+muparser:
+  fedora: [muParser-devel]
+  ubuntu: [libmuparser-dev]
+nasm:
+  arch: [nasm]
+  debian: [nasm]
+  fedora: [nasm]
+  freebsd: [nasm]
+  gentoo:
+    portage:
+      packages: [dev-lang/nasm]
+  macports: [nasm]
+  opensuse: [nasm]
+  ubuntu: [nasm]
+net-tools:
+  arch: [net-tools]
+  debian: [net-tools]
+  fedora: [net-tools]
+  ubuntu: [net-tools]
 netcdf:
   debian: [libnetcdf-dev]
   fedora: [netcdf]
+  macports: [netcdf, netcdf-cxx]
   ubuntu: [libnetcdf-dev]
 netpbm:
   arch: [netpbm]
   debian: [libnetpbm10-dev]
   fedora: [netpbm-devel]
-  gentoo: [netpbm]
+  gentoo: [media-libs/netpbm]
   macports: [netpbm]
+  opensuse: [netpbm]
   ubuntu: [libnetpbm10-dev]
 nite-dev:
   arch: [primesense-nite]
@@ -1769,14 +2713,30 @@ nkf:
   debian: [nkf]
   fedora: [nkf]
   ubuntu: [nkf]
+nodejs:
+  debian: [nodejs]
+  fedora: [nodejs]
+  ubuntu: [nodejs]
 nvidia-cg:
   arch: [nvidia-cg-toolkit]
   debian: [nvidia-cg-toolkit]
   fedora: [Cg]
-  gentoo: [nvidia-cg-toolkit]
+  gentoo: [media-gfx/nvidia-cg-toolkit]
   ubuntu: [nvidia-cg-toolkit]
+nvidia-cuda:
+  debian: [nvidia-cuda-toolkit]
+  gentoo: [nvidia-cuda-toolkit]
+  ubuntu: [nvidia-cuda-toolkit]
 omniidl:
-  debian: [omniidl4]
+  debian:
+    etch: [omniidl4]
+    jessie: [omniidl]
+    lenny: [omniidl4]
+    sarge: [omniidl4]
+    sid: [omniidl]
+    squeeze: [omniidl]
+    wheezy: [omniidl]
+  fedora: [omniORB-devel]
   ubuntu:
     lucid: [omniidl4]
     maverick: [omniidl4]
@@ -1785,21 +2745,38 @@ omniidl:
     precise: [omniidl]
     quantal: [omniidl]
     raring: [omniidl]
+    saucy: [omniidl]
+    trusty: [omniidl]
+    utopic: [omniidl]
+    vivid: [omniidl]
 omniorb:
   arch: [omniorb]
-  debian: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
-  fedora: [omniORB]
+  debian:
+    etch: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
+    jessie: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
+    lenny: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
+    sarge: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
+    sid: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
+    squeeze: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
+    wheezy: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
+  fedora: [omniORB, omniORB-devel, omniORB-servers]
+  macports: [omniORB]
   ubuntu:
     lucid: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
     maverick: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
     natty: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
-    oneiric: [omniorb, omniidl, omniorb-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
-    precise: [omniorb, omniidl, omniorb-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
-    quantal: [omniorb, omniidl, omniorb-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
-    raring: [omniorb, omniidl, omniorb-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
+    oneiric: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
+    precise: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
+    quantal: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
+    raring: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
+    saucy: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
+    trusty: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
+    utopic: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
+    vivid: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
 omniorb4-idl:
   arch: [omniorb]
   debian: [omniorb-idl]
+  fedora: [omniORB-devel]
   ubuntu: [omniorb4-idl]
 opende:
   arch: [ode]
@@ -1825,59 +2802,146 @@ openmpi:
   debian: []
   fedora: [openmpi]
   freebsd: []
+  macports: [openmpi]
   ubuntu: []
 openni-dev:
   arch: [openni]
-  debian: [openni-dev]
+  debian: [libopenni-dev]
   fedora: [openni-devel]
-  ubuntu: [openni-dev]
+  ubuntu: [libopenni-dev]
+openssh-server:
+  fedora: [openssh-server]
+  ubuntu: [openssh-server]
+openssl:
+  debian: [openssl]
+  fedora: [openssl]
+  ubuntu: [openssl]
+osm2pgsql:
+  fedora: [osm2pgsql]
+  ubuntu: [osm2pgsql]
+osmium:
+  fedora: [libosmium-devel]
+  ubuntu: [libosmium-dev]
 pcre:
   arch: [pcre]
   debian: [libpcre3-dev]
   fedora: [pcre-devel]
-  gentoo: [libpcre]
+  gentoo: [dev-libs/libpcre]
+  macports: [pcre]
   rhel: [pcre-devel]
   ubuntu: [libpcre3-dev]
 pcre-dev:
   arch: [pcre]
   debian: [libpcre++-dev]
   fedora: [pcre-devel]
+  gentoo: [dev-libs/pcre++]
   rhel: [pcre-devel]
   ubuntu: [libpcre++-dev]
+phantomjs:
+  ubuntu: [phantomjs]
 pkg-config:
   arch: [pkg-config]
   cygwin: [pkg-config]
   debian: [pkg-config]
   fedora: [pkgconfig]
   freebsd: [pkg-config]
-  gentoo: [dev-util/pkgconfig]
+  gentoo: [dev-util/pkgconf]
   macports: [pkgconfig]
   opensuse: [pkg-config]
   rhel: [pkgconfig]
   ubuntu: [pkg-config]
+portaudio:
+  arch: [portaudio]
+  debian: [libportaudio-dev]
+  fedora: [portaudio-devel]
+  ubuntu: [libportaudio-dev]
+postgresql:
+  fedora: [postgresql-server, postgresql-contrib]
+  ubuntu: [postgresql, postgresql-contrib]
+postgresql-9.x-postgis:
+  fedora: [postgis]
+  ubuntu:
+    precise: [postgresql-9.1-postgis, postgresql-contrib-9.1, postgresql-server-dev-9.1]
+    raring: [postgresql-9.1-postgis, postgresql-contrib-9.1, postgresql-server-dev-9.1]
+    saucy: [postgresql-9.1-postgis, postgresql-contrib-9.1, postgresql-server-dev-9.1]
+    trusty: [postgresql-9.3-postgis-2.1, postgresql-contrib-9.3, postgresql-server-dev-9.3]
+    utopic: [postgresql-9.4-postgis-2.1, postgresql-contrib-9.4, postgresql-server-dev-9.4]
+    vivid: [postgresql-9.4-postgis-2.1, postgresql-contrib-9.4, postgresql-server-dev-9.4]
+postgresql-client:
+  fedora: [postgresql-client]
+  ubuntu: [postgresql-client]
+procps:
+  arch: [procps-ng]
+  debian: [procps]
+  fedora: [procps-ng]
+  ubuntu: [procps]
+proj:
+  fedora: [proj-devel]
+  ubuntu: [libproj-dev]
 protobuf:
   arch: [protobuf]
   debian: [libprotobuf7]
   fedora: [protobuf]
-  ubuntu: [libprotobuf7]
+  macports: [protobuf-cpp]
+  ubuntu:
+    precise: [libprotobuf7]
+    raring: [libprotobuf7]
+    saucy: [libprotobuf7]
+    trusty: [libprotobuf8]
+    utopic: [libprotobuf8]
+    vivid: [libprotobuf9]
 protobuf-dev:
   arch: [protobuf]
   debian: [libprotobuf-dev, protobuf-compiler, libprotoc-dev]
   fedora: [protobuf-devel, protobuf-compiler]
+  macports: [protobuf-cpp]
   ubuntu: [libprotobuf-dev, protobuf-compiler, libprotoc-dev]
 ps-engine:
   arch: [primesense-sensor]
   debian: [ps-engine]
   fedora: [openni-primesense]
   ubuntu: [ps-engine]
+pstoedit:
+  fedora: [pstoedit]
+  ubuntu: [pstoedit]
 pyqt4-dev-tools:
   arch: [python2-pyqt4]
   debian: [pyqt4-dev-tools]
-  fedora: [PyQT4-devel]
+  fedora: [PyQt4-devel]
   gentoo:
     portage:
       packages: [dev-python/PyQt4]
   ubuntu: [pyqt4-dev-tools]
+python-cairo:
+  fedora: [pycairo]
+  gentoo:
+    portage:
+      packages: [dev-python/pycairo]
+python-nose:
+  fedora: [python-nose]
+  gentoo:
+    portage:
+      packages: [dev-python/nose]
+python-opencv:
+  fedora: [opencv-python]
+  gentoo: [media-libs/opencv]
+  ubuntu: [python-opencv]
+python-pydot:
+  fedora: [pydot]
+  gentoo:
+    portage:
+      packages: [media-gfx/pydot]
+python-pygraphviz:
+  fedora: [python-pygraphviz]
+  gentoo:
+    portage:
+      packages: [dev-python/pygraphviz]
+python-sphinx:
+  fedora: [python-sphinx]
+  gentoo: [dev-python/sphinx]
+python-vtk:
+  fedora: [vtk-python]
+  gentoo: [dev-python/pyvtk]
 qhull-bin:
   arch: [qhull]
   debian: [qhull-bin]
@@ -1893,14 +2957,34 @@ qt4-qmake:
   arch: [qt4]
   debian: [qt4-qmake]
   fedora: [qt-devel]
-  gentoo: [qt-core]
+  gentoo: [dev-qt/qtcore]
+  macports: [qt4-mac]
+  opensuse: [libqt4-devel]
   rhel: [qt-devel]
   ubuntu: [qt4-qmake]
+qt5-qmake:
+  fedora: [qt5-qtbase-devel]
+  ubuntu: [qt5-qmake]
+qtmobility-dev:
+  arch: [qtmobility]
+  debian: [qtmobility-dev]
+  fedora: [qt-mobility-devel]
+  ubuntu: [qtmobility-dev]
+r-base:
+  fedora: [R]
+  ubuntu: [r-base]
+r-base-dev:
+  fedora: [R-devel]
+  ubuntu: [r-base-dev]
 readline-dev:
   arch: [readline]
   debian: [libreadline-dev]
   fedora: [readline-devel]
   ubuntu: [libreadline-dev]
+recode:
+  arch: [recode]
+  fedora: [recode-devel]
+  ubuntu: [recode]
 recordmydesktop:
   arch: [recordmydesktop]
   debian: [recordmydesktop]
@@ -1911,6 +2995,13 @@ redis-server:
   debian: [redis-server]
   fedora: [redis]
   ubuntu: [redis-server]
+robotino-api2:
+  ubuntu: [robotino-api2]
+rosemacs-el:
+  ubuntu:
+    lucid: [rosemacs-el]
+    oneiric: [rosemacs-el]
+    precise: [rosemacs-el]
 ruby:
   arch: [ruby]
   debian: [ruby1.8-dev, libruby1.8, rubygems1.8]
@@ -1918,14 +3009,23 @@ ruby:
   gentoo:
     portage:
       packages: [dev-lang/ruby]
+  macports: [ruby]
   ubuntu:
     lucid: [ruby1.8-dev, libopenssl-ruby1.8, rubygems1.8]
     maverick: [ruby1.8-dev, libruby1.8, rubygems1.8]
     natty: [ruby1.8-dev, libruby1.8, rubygems1.8]
     oneiric: [ruby1.8-dev, libruby1.8, rubygems1.8]
     precise: [ruby1.8-dev, libruby1.8, rubygems1.8]
-    quantal: [ruby1.9.1-dev, libruby1.9.1, rubygems]
-    raring: [ruby1.9.1-dev, libruby1.9.1, rubygems]
+    quantal: [ruby1.9.1-dev, libruby1.9.1, ruby1.9.1]
+    raring: [ruby1.9.1-dev, libruby1.9.1, ruby1.9.1]
+    saucy: [ruby1.9.1-dev, libruby1.9.1, ruby1.9.1]
+    trusty: [ruby1.9.1-dev, libruby1.9.1, ruby1.9.1]
+ruby-sass:
+  fedora: [rubygem-sass]
+  ubuntu: [ruby-sass]
+ruby1.9.3:
+  ubuntu:
+    precise: [ruby1.9.3]
 sbcl:
   arch: [sbcl]
   debian: [sbcl]
@@ -1933,6 +3033,8 @@ sbcl:
   gentoo:
     portage:
       packages: [dev-lisp/sbcl]
+  macports: [sbcl]
+  opensuse: [sbcl]
   ubuntu: [sbcl]
 scons:
   arch: [scons]
@@ -1951,49 +3053,94 @@ screen:
     portage:
       packages: [app-misc/screen]
   ubuntu: [screen]
+sdformat:
+  arch: [sdformat-hg]
+  debian:
+    sid: [libsdformat-dev]
+  fedora: [sdformat-devel]
+  ubuntu:
+    precise: [sdformat]
+    quantal: [sdformat]
+    raring: [sdformat]
+    saucy: [libsdformat-dev]
+    trusty: [libsdformat-dev]
 sdl:
   arch: [sdl]
   debian: [libsdl1.2-dev]
-  fedora: [SDL]
+  fedora: [SDL-devel]
+  macports: [libsdl]
   ubuntu: [libsdl1.2-dev]
 sdl-gfx:
   arch: [sdl_gfx]
   debian: [libsdl-gfx1.2-dev]
   fedora: [SDL_gfx]
   gentoo:
-  portage:
-    packages: [media-libs/sdl-gfx]
+    portage:
+      packages: [media-libs/sdl-gfx]
   ubuntu: [libsdl-gfx1.2-dev]
 sdl-image:
   arch: [sdl_image]
   debian: [libsdl-image1.2-dev]
   fedora: [SDL_image-devel]
   freebsd: [sdl_image]
-  gentoo: [sdl-image]
+  gentoo: [media-libs/sdl-image]
   macports: [libsdl_image]
+  opensuse: [SDL_image]
   ubuntu: [libsdl-image1.2-dev]
+sdl-mixer:
+  arch: [sdl_mixer]
+  debian: [libsdl-mixer1.2-dev]
+  fedora: [SDL_mixer-devel]
+  macports: [libsdl_mixer]
+  ubuntu: [libsdl-mixer1.2-dev]
 sdl-ttf:
   arch: [sdl_ttf]
   debian: [libsdl-ttf2.0-dev]
   fedora: [SDL_ttf]
   ubuntu: [libsdl-ttf2.0-dev]
+sdl2:
+  debian: [libsdl2-dev]
+  fedora: [SDL2-devel]
+  ubuntu: [libsdl2-dev]
+sdl2-ttf:
+  debian: [libsdl2-ttf-dev]
+  fedora: [SDL2_ttf-devel]
+  ubuntu: [libsdl2-ttf-dev]
 sfml-dev:
   arch: [sfml]
   fedora: [SFML-devel]
   ubuntu: [libsfml-dev]
+sixad:
+  ubuntu: [sixad]
+slime:
+  fedora: [emacs-slime]
+  ubuntu: [slime]
 snappy:
   arch: [snappy]
   fedora: [snappy]
   ubuntu: [libsnappy-dev]
+socat:
+  arch: [socat]
+  fedora: [socat]
+  ubuntu: [socat]
+sox:
+  fedora: [sox]
+  ubuntu: [sox]
 spacenavd:
   arch: [spacenavd]
   debian: [spacenavd]
   fedora: [spacenavd]
   ubuntu: [spacenavd]
+sparsehash:
+  ubuntu: [sparsehash]
 sqlite3:
   arch: [sqlite]
   debian: [sqlite3]
+  fedora: [sqlite]
   ubuntu: [sqlite3]
+sshpass:
+  fedora: [sshpass]
+  ubuntu: [sshpass]
 subversion:
   arch: [subversion]
   debian: [subversion]
@@ -2007,6 +3154,7 @@ suitesparse:
   arch: [suitesparse]
   debian: [libsuitesparse-dev]
   fedora: [suitesparse-devel]
+  macports: [SuiteSparse]
   ubuntu: [libsuitesparse-dev]
 swi-prolog:
   arch: [swi-prolog]
@@ -2019,7 +3167,7 @@ swi-prolog-clib:
   fedora: [pl-devel]
   ubuntu:
     lucid: [swi-prolog-clib]
-    maveric: [swi-prolog]
+    maverick: [swi-prolog]
     natty: [swi-prolog]
     oneiric: [swi-prolog]
     precise: [swi-prolog]
@@ -2028,6 +3176,7 @@ swi-prolog-clib:
 swi-prolog-http:
   arch: [swi-prolog]
   debian: [swi-prolog-http]
+  fedora: [pl]
   ubuntu:
     lucid: [swi-prolog-http]
     maverick: [swi-prolog]
@@ -2036,6 +3185,14 @@ swi-prolog-http:
     precise: [swi-prolog]
     quantal: [swi-prolog]
     raring: [swi-prolog]
+swi-prolog-java:
+  debian: [swi-prolog-java]
+  fedora: [pl-jpl]
+  ubuntu:
+    precise: [swi-prolog-java]
+    quantal: [swi-prolog-java]
+    raring: [swi-prolog-java]
+    trusty: [swi-prolog-java]
 swi-prolog-odbc:
   arch: [swi-prolog]
   debian: [swi-prolog-odbc]
@@ -2044,6 +3201,7 @@ swi-prolog-odbc:
 swi-prolog-semweb:
   arch: [swi-prolog]
   debian: [swi-prolog-semweb]
+  fedora: [pl]
   ubuntu:
     lucid: [swi-prolog-semweb]
     maverick: [swi-prolog]
@@ -2055,6 +3213,7 @@ swi-prolog-semweb:
 swi-prolog-sgml:
   arch: [swi-prolog]
   debian: [swi-prolog-sgml]
+  fedora: [pl]
   ubuntu:
     lucid: [swi-prolog-sgml]
     maverick: [swi-prolog]
@@ -2075,6 +3234,11 @@ swi-prolog-xpce:
     precise: [swi-prolog]
     quantal: [swi-prolog]
     raring: [swi-prolog]
+swig:
+  fedora: [swig]
+  ubuntu: [swig]
+swig-wx:
+  gentoo: [dev-lang/swig]
 sysstat:
   arch: [sysstat]
   debian: [sysstat]
@@ -2084,7 +3248,7 @@ tango-icon-theme:
   arch: [tango-icon-theme]
   debian: [tango-icon-theme]
   fedora: [tango-icon-theme]
-  gentoo: [gentoo, x11-themes/tango-icon-theme]
+  gentoo: [x11-themes/tango-icon-theme]
   macports: [tango-icon-theme]
   mandrake: [tango-icon-theme]
   opensuse: [tango-icon-theme]
@@ -2104,55 +3268,83 @@ tbb:
   arch: [intel-tbb]
   debian: [libtbb-dev]
   fedora: [tbb-devel]
-  gentoo: [tbb]
+  gentoo: [dev-cpp/tbb]
+  macports: [tbb]
+  opensuse: [tbb-devel]
   ubuntu: [libtbb-dev]
 tcsh:
   arch: [tcsh]
   debian: [tcsh]
   fedora: [tcsh]
   ubuntu: [tcsh]
+terminator:
+  fedora: [terminator]
+  ubuntu: [terminator]
+tesseract-ocr:
+  fedora: [tesseract-devel]
+  ubuntu: [tesseract-ocr]
 texlive-fonts-extra:
   arch: [texlive-fontsextra]
   debian: [texlive-fonts-extra]
-  fedora:
-    spherical: [texlive-bbm, texlive-bbm-macros]
+  fedora: [texlive-bbm, texlive-bbm-macros]
+  macports: [texlive-fonts-extra]
   ubuntu: [texlive-fonts-extra]
 texlive-fonts-recommended:
   arch: [texlive-core]
   debian: [texlive-fonts-recommended]
-  fedora:
-    spherical: [texlive-times, texlive-helvetic]
+  fedora: [texlive-times, texlive-helvetic]
+  macports: [texlive-fonts-recommended]
   ubuntu: [texlive-fonts-recommended]
+texlive-full:
+  ubuntu: [texlive-full]
 texlive-latex-base:
   arch: [texlive-core]
   debian: [texlive-latex-base]
-  fedora:
-    spherical: [texlive-latex, texlive-parskip]
+  fedora: [texlive-latex, texlive-parskip]
+  macports: [texlive]
   ubuntu: [texlive-latex-base]
 texlive-latex-extra:
   arch: [texlive-latexextra]
   debian: [texlive-latex-extra]
-  fedora:
-    spherical: [texlive-titlesec, texlive-wrapfig, texlive-multirow, texlive-fancybox]
+  fedora: [texlive-titlesec, texlive-wrapfig, texlive-multirow, texlive-fancybox]
   ubuntu: [texlive-latex-extra]
 texlive-latex-recommended:
   arch: [texlive-core]
   debian: [texlive-latex-recommended]
-  fedora:
-    spherical: [texlive-framed, texlive-threeparttable, texlive-ec, texlive-mdwtools]
+  fedora: [texlive-framed, texlive-threeparttable, texlive-ec, texlive-mdwtools]
+  macports: [texlive-latex-recommended]
   ubuntu: [texlive-latex-recommended]
+texmaker:
+  fedora: [texmaker]
+  ubuntu: [texmaker]
+time:
+  debian: [time]
+  fedora: [time]
+  ubuntu: [time]
 tinyxml:
   arch: [tinyxml]
   debian: [libtinyxml-dev]
   fedora: [tinyxml-devel]
-  gentoo: [tinyxml]
+  gentoo:
+    portage:
+      packages: [dev-libs/tinyxml]
+  macports: [tinyxml]
+  opensuse: [tinyxml-devel]
   rhel: [tinyxml-devel]
   ubuntu: [libtinyxml-dev]
+tinyxml2:
+  arch: [tinyxml2]
+  debian: [libtinyxml2-dev]
+  fedora: [tinyxml2-devel]
+  ubuntu: [libtinyxml2-dev]
 tix:
   arch: [tix]
   debian: [tix]
   fedora: [tix]
   ubuntu: [tix]
+tree:
+  fedora: [tree]
+  ubuntu: [tree]
 ttf-kochi-gothic:
   arch: [ttf-togoshi-gothic]
   debian: [ttf-kochi-gothic]
@@ -2182,15 +3374,22 @@ udhcpc:
 unison:
   arch: [unison]
   debian: [unison]
+  fedora: [unison240]
   ubuntu:
     apt:
       packages: [unison]
 unison-gui:
   arch: [unison]
   debian: [unison-gtk]
+  fedora: [unison240-gtk]
   ubuntu:
     apt:
       packages: [unison-gtk]
+unoconv:
+  arch: [unoconv]
+  debian: [unoconv]
+  fedora: [unoconv]
+  ubuntu: [unoconv]
 unrar:
   arch: [unrar]
   debian: [unrar]
@@ -2213,13 +3412,40 @@ uuid:
   freebsd: [e2fsprogs-libuuid]
   gentoo: [util-linux]
   macports: [ossp-uuid]
+  opensuse: [libuuid-devel]
   rhel: [libuuid-devel]
   ubuntu: [uuid-dev]
+uvcdynctrl:
+  fedora: [uvcdynctrl]
+  ubuntu: [uvcdynctrl]
+v4l-utils:
+  arch: [v4l-utils]
+  fedora: [v4l-utils]
+  ubuntu: [v4l-utils]
+vim:
+  fedora: [vim-enhanced]
+  ubuntu: [vim]
 vlc:
   arch: [vlc]
   debian: [vlc]
   fedora: [vlc]
   ubuntu: [vlc]
+vrep:
+  ubuntu:
+    trusty:
+      source:
+        uri: 'https://raw.githubusercontent.com/peci1/vrep_ros_bridge/rdmanifest/vrep.rdmanifest'
+wget:
+  arch: [wget]
+  debian: [wget]
+  fedora: [wget]
+  freebsd: [wget]
+  gentoo:
+    portage:
+      packages: [net-misc/wget]
+  macports: [wget]
+  opensuse: [wget]
+  ubuntu: [wget]
 wkhtmltopdf:
   arch: [wkhtmltopdf]
   debian: [wkhtmltopdf]
@@ -2228,6 +3454,7 @@ wkhtmltopdf:
 wx-common:
   arch: [wxgtk]
   debian: [wx-common]
+  fedora: [wxGTK-devel]
   ubuntu: [wx-common]
 wxpython:
   arch: [wxpython]
@@ -2236,7 +3463,7 @@ wxpython:
   fedora: [wxPython-devel]
   freebsd: [py27-wxPython]
   gentoo: [dev-python/wxpython]
-  macports: [py26-wxpython, py26-gobject, py26-gtk, py26-cairo]
+  macports: [py27-wxpython, py27-gobject, py27-gtk, py27-cairo]
   opensuse: [python-wxGTK]
   rhel: [wxPython-devel]
   ubuntu: [python-wxgtk2.8]
@@ -2278,7 +3505,9 @@ xfont-server:
   debian: [xfs]
   fedora: [libXfont]
   macports:
-  ubuntu: [xfs]
+  ubuntu:
+    lucid: [xfs]
+    precise: [xfs]
 xfonts-100dpi:
   debian: [xfonts-100dpi]
   fedora: [xorg-x11-fonts-100dpi]
@@ -2294,6 +3523,7 @@ xpath-perl:
   debian: [libxml-xpath-perl]
   fedora: [perl-XML-XPath]
   gentoo: [dev-perl/XML-XPath]
+  macports: [p5-xml-xpath]
   ubuntu: [libxml-xpath-perl]
 xterm:
   arch: [xterm]
@@ -2302,7 +3532,7 @@ xterm:
   ubuntu: [xterm]
 xulrunner-1.9.2:
   arch: [xulrunner]
-  debian:
+  debian: []
   fedora: [xulrunner]
   ubuntu:
     karmic: [xulrunner-1.9.2]
@@ -2335,11 +3565,15 @@ yaml:
   arch: [libyaml]
   debian: [libyaml-dev]
   fedora: [libyaml]
-  gentoo: [libyaml]
+  gentoo: [dev-libs/libyaml]
+  macports: [libyaml]
   ubuntu: [libyaml-dev]
 yaml-cpp:
   arch: [yaml-cpp]
   debian:
+    jessie:
+      apt:
+        packages: [libyaml-cpp-dev]
     sid:
       apt:
         packages: [libyaml-cpp-dev]
@@ -2351,7 +3585,11 @@ yaml-cpp:
       apt:
         packages: [libyaml-cpp-dev]
   fedora: [yaml-cpp-devel]
-  gentoo: [yaml-cpp]
+  gentoo:
+    portage:
+      packages: [dev-cpp/yaml-cpp]
+  macports: [yaml-cpp]
+  opensuse: [yaml-cpp-devel]
   rhel: [yaml-cpp-devel]
   ubuntu:
     lucid: [yaml-cpp0.2.6-dev]
@@ -2361,6 +3599,11 @@ yaml-cpp:
     precise: [yaml-cpp]
     quantal: [libyaml-cpp-dev]
     raring: [libyaml-cpp-dev]
+    saucy: [libyaml-cpp-dev]
+    trusty: [libyaml-cpp-dev]
+    trusty_python3: [libyaml-cpp-dev]
+    utopic: [libyaml-cpp-dev]
+    vivid: [libyaml-cpp-dev]
 yasm:
   arch: [yasm]
   debian: [yasm]
@@ -2369,7 +3612,7 @@ yasm:
 zbar:
   arch: [zbar]
   debian: [libzbar-dev]
-  fedora: [zbar]
+  fedora: [zbar-devel]
   ubuntu: [libzbar-dev]
 zlib:
   arch: [zlib]

@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+
+from __future__ import print_function
+
 import re
 import yaml
 import argparse
@@ -17,29 +20,33 @@ indent_atom = '  '
 #           (C) 2013 Paul M <pmathieu@willowgarage.com>
 
 codeCodes = {
-    'black':    '0;30',     'bright gray':  '0;37',
-    'blue':     '0;34',     'white':        '1;37',
-    'green':    '0;32',     'bright blue':  '1;34',
-    'cyan':     '0;36',     'bright green': '1;32',
-    'red':      '0;31',     'bright cyan':  '1;36',
-    'purple':   '0;35',     'bright red':   '1;31',
-    'yellow':   '0;33',     'bright purple':'1;35',
-    'dark gray':'1;30',     'bright yellow':'1;33',
-    'normal':   '0'
+    'black':     '0;30',     'bright gray':   '0;37',
+    'blue':      '0;34',     'white':         '1;37',
+    'green':     '0;32',     'bright blue':   '1;34',
+    'cyan':      '0;36',     'bright green':  '1;32',
+    'red':       '0;31',     'bright cyan':   '1;36',
+    'purple':    '0;35',     'bright red':    '1;31',
+    'yellow':    '0;33',     'bright purple': '1;35',
+    'dark gray': '1;30',     'bright yellow': '1;33',
+    'normal':    '0'
 }
+
 
 def printc(text, color):
     """Print in color."""
     if sys.stdout.isatty():
-        print "\033["+codeCodes[color]+"m"+text+"\033[0m"
+        print("\033["+codeCodes[color]+"m"+text+"\033[0m")
     else:
-        print text
+        print(text)
+
 
 def print_test(msg):
     printc(msg, 'yellow')
 
+
 def print_err(msg):
     printc('  ERR: ' + msg, 'red')
+
 
 def no_trailing_spaces(buf):
     clean = True
@@ -48,6 +55,7 @@ def no_trailing_spaces(buf):
             print_err("trailing space line %u" % (i+1))
             clean = False
     return clean
+
 
 def generic_parser(buf, cb):
     ilen = len(indent_atom)
@@ -62,7 +70,7 @@ def generic_parser(buf, cb):
         if re.search(r'^\s*#', l) is not None:
             continue
         try:
-            s = re.search(r'(?!' + indent_atom + ')(\w|\?)', l).start()
+            s = re.search(r'(?!' + indent_atom + ')[^\s]', l).start()
         except:
             print_err("line %u: %s" % (i, l))
             raise
@@ -82,6 +90,7 @@ def generic_parser(buf, cb):
 
 def correct_indent(buf):
     ilen = len(indent_atom)
+
     def fun(i, l, o):
         s = o['s']
         olvl = fun.lvl
@@ -97,8 +106,10 @@ def correct_indent(buf):
     fun.lvl = 0
     return generic_parser(buf, fun)
 
+
 def check_brackets(buf):
     excepts = ['uri', 'md5sum']
+
     def fun(i, l, o):
         m = re.match(r'^(?:' + indent_atom + r')*([^:]*):\s*(\w.*)$', l)
         if m is not None and m.groups()[0] not in excepts:
@@ -106,6 +117,7 @@ def check_brackets(buf):
             return False
         return True
     return generic_parser(buf, fun)
+
 
 def check_order(buf):
     def fun(i, l, o):
@@ -120,13 +132,14 @@ def check_order(buf):
         m = re.match(r'^(?:' + indent_atom + r')*([^:]*):.*$', l)
         prev = st[lvl]
         try:
-            item = m.groups()[0]
+            # parse as yaml to parse `"foo bar"` as string 'foo bar' not string '"foo bar"'
+            item = yaml.load(m.groups()[0])
         except:
             print('woops line %d' % i)
             raise
         st[lvl] = item
         if item < prev:
-            print_err("list out of order line %u" % (i+1))
+            print_err("list out of alphabetical order line %u.  '%s' should come before '%s'" % ((i+1), item, prev))
             return False
         return True
     fun.namestack = ['']
@@ -143,17 +156,42 @@ def main(fname):
     my_assert.clean = True
 
     # here be tests.
-    print_test("checking for trailing spaces...")
-    my_assert(no_trailing_spaces(buf))
-    print_test("checking for incorrect indentation...")
-    my_assert(correct_indent(buf))
-    print_test("checking for non-bracket package lists...")
-    my_assert(check_brackets(buf))
-    print_test("checking for item order...")
-    my_assert(check_order(buf))
-    print_test("building yaml dict...")
+    ydict = None
     try:
         ydict = yaml.load(buf)
+    except Exception:
+        pass
+    if ydict != {}:
+        print_test("checking for trailing spaces...")
+        my_assert(no_trailing_spaces(buf))
+        print_test("checking for incorrect indentation...")
+        my_assert(correct_indent(buf))
+        print_test("checking for non-bracket package lists...")
+        my_assert(check_brackets(buf))
+        print_test("checking for item order...")
+        my_assert(check_order(buf))
+        print_test("building yaml dict...")
+    else:
+        print_test("skipping file with empty dict contents...")
+    try:
+        ydict = yaml.load(buf)
+
+        # ensure that values don't contain whitespaces
+        whitespace_whitelist = ["el capitan", "mountain lion"]
+
+        def walk(node):
+            if isinstance(node, dict):
+                for key, value in node.items():
+                    walk(key)
+                    walk(value)
+            if isinstance(node, list):
+                for value in node:
+                    walk(value)
+            if isinstance(node, str) and re.search(r'\s', node) and node not in whitespace_whitelist:
+                    print_err("value '%s' must not contain whitespaces" % node)
+                    my_assert(False)
+        walk(ydict)
+
     except Exception as e:
         print_err("could not build the dict: %s" % (str(e)))
         my_assert(False)
@@ -171,5 +209,3 @@ if __name__ == '__main__':
 
     if not main(args.infile):
         sys.exit(1)
-
-
